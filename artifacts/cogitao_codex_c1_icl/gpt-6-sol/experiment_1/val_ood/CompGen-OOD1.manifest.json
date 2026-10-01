@@ -1,0 +1,376 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 1,
+  "split": "val_ood",
+  "condition": "CompGen-OOD1",
+  "target_suite": [
+    "translate_up",
+    "rot90"
+  ],
+  "target_indices": [
+    64,
+    72,
+    122,
+    364,
+    422,
+    431,
+    594,
+    659,
+    844,
+    889
+  ],
+  "context": {
+    "64": [
+      {
+        "source_index": 14332,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 8121,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 38141,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 81793,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 91348,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ],
+    "72": [
+      {
+        "source_index": 8836,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 13590,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 54941,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 73389,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 88572,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "122": [
+      {
+        "source_index": 21269,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 3320,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 46580,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 42256,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 71818,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "364": [
+      {
+        "source_index": 14413,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 10559,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 77212,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 93985,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 81083,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "422": [
+      {
+        "source_index": 11014,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 18515,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 79030,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 49792,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 91819,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ],
+    "431": [
+      {
+        "source_index": 15331,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 6805,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 46115,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 78450,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 68035,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "594": [
+      {
+        "source_index": 15322,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 7976,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 44758,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 67187,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 43680,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "659": [
+      {
+        "source_index": 18581,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 7257,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 84582,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 49968,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 70741,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "844": [
+      {
+        "source_index": 18632,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 10674,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 33900,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 76614,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 85883,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "889": [
+      {
+        "source_index": 22152,
+        "suite": [
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 2139,
+        "suite": [
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 78420,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 50234,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 95710,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "9a6c36050614c04b6da69324e6291072befc49b1c2a3f6595bafd2e17761693c"
+}

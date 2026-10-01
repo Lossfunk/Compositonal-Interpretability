@@ -1,0 +1,241 @@
+{
+  "model": "mlp",
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/last.ckpt",
+  "global_step": 78000,
+  "trained_checkpoint": true,
+  "model_resolution": [
+    20,
+    20
+  ],
+  "raw_resolution": [
+    15,
+    15
+  ],
+  "geometry_coverage": {
+    "test_ood|translate_up -> rot90|recorded_exact": 1000,
+    "test_ood|translate_up -> rot90|recorded_supported": 1000,
+    "test_ood|translate_up -> rot90|reverse_out_of_grid": 23,
+    "test_ood|translate_up -> rot90|reverse_supported": 977,
+    "test_ood|translate_up -> rot90|reverse_unsupported": 23,
+    "test_ood|translate_up -> rot90|same_final_grid": 977,
+    "test_ood|translate_up -> rot90|same_pixel_matrix": 977,
+    "test|rot90|recorded_exact": 111,
+    "test|rot90|recorded_supported": 111,
+    "test|translate_up|recorded_exact": 112,
+    "test|translate_up|recorded_supported": 112,
+    "train|rot90|recorded_exact": 256,
+    "train|rot90|recorded_supported": 256,
+    "train|translate_up|recorded_exact": 256,
+    "train|translate_up|recorded_supported": 256,
+    "val_ood|translate_up -> rot90|recorded_exact": 1000,
+    "val_ood|translate_up -> rot90|recorded_supported": 1000,
+    "val_ood|translate_up -> rot90|reverse_out_of_grid": 21,
+    "val_ood|translate_up -> rot90|reverse_supported": 979,
+    "val_ood|translate_up -> rot90|reverse_unsupported": 21,
+    "val_ood|translate_up -> rot90|same_final_grid": 979,
+    "val_ood|translate_up -> rot90|same_pixel_matrix": 979,
+    "val|rot90|recorded_exact": 111,
+    "val|rot90|recorded_supported": 111,
+    "val|translate_up|recorded_exact": 112,
+    "val|translate_up|recorded_supported": 112
+  },
+  "matrix_example": {
+    "split": "val_ood",
+    "source_index": 0,
+    "raw_grid_shape": [
+      15,
+      15
+    ]
+  },
+  "attribute_matrices_commute": true,
+  "direct_model": {
+    "val|rot90": {
+      "samples": 111,
+      "exact_grid_accuracy": 0.4774774774774775,
+      "pixel_accuracy": 0.994954954954955,
+      "object_pixel_accuracy": 0.9374024502865903,
+      "cross_entropy": 0.015470524006061725,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val|translate_up": {
+      "samples": 112,
+      "exact_grid_accuracy": 0.9196428571428571,
+      "pixel_accuracy": 0.9994642857142857,
+      "object_pixel_accuracy": 0.9932055813925607,
+      "cross_entropy": 0.002398046553134918,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test|rot90": {
+      "samples": 111,
+      "exact_grid_accuracy": 0.4774774774774775,
+      "pixel_accuracy": 0.9942117117117117,
+      "object_pixel_accuracy": 0.9274543556007179,
+      "cross_entropy": 0.017903930389129363,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test|translate_up": {
+      "samples": 112,
+      "exact_grid_accuracy": 0.8928571428571429,
+      "pixel_accuracy": 0.9987946428571428,
+      "object_pixel_accuracy": 0.9827226740973336,
+      "cross_entropy": 0.003083117167864527,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val_ood|translate_up -> rot90": {
+      "samples": 1000,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.917305,
+      "object_pixel_accuracy": 0.17710302436351777,
+      "cross_entropy": 1.076760740966797,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val_ood|translate_up -> rot90|paired_reverse_subset": {
+      "samples": 979,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.917346782431052,
+      "object_pixel_accuracy": 0.17764682156072817,
+      "cross_entropy": 1.0764174295957292,
+      "counterfactual": false,
+      "paired_reverse_subset": true
+    },
+    "val_ood|rot90 -> translate_up": {
+      "samples": 979,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9325612870275791,
+      "object_pixel_accuracy": 0.24674210436375807,
+      "cross_entropy": 0.6220730232340079,
+      "counterfactual": true,
+      "paired_reverse_subset": false
+    },
+    "test_ood|translate_up -> rot90": {
+      "samples": 1000,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.918585,
+      "object_pixel_accuracy": 0.1843187462091446,
+      "cross_entropy": 1.0703979748535157,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test_ood|translate_up -> rot90|paired_reverse_subset": {
+      "samples": 977,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9186847492323439,
+      "object_pixel_accuracy": 0.18475276738130691,
+      "cross_entropy": 1.0698350926285025,
+      "counterfactual": false,
+      "paired_reverse_subset": true
+    },
+    "test_ood|rot90 -> translate_up": {
+      "samples": 977,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.93271494370522,
+      "object_pixel_accuracy": 0.23854857067002733,
+      "cross_entropy": 0.624752445904235,
+      "counterfactual": true,
+      "paired_reverse_subset": false
+    }
+  },
+  "latent_probe": {
+    "train|rot90": {
+      "pairs": 256,
+      "pixels": 4371,
+      "mse": 0.18805720371780918,
+      "identity_mse": 0.6401341642606756,
+      "mse_over_identity": 0.29377779568288825,
+      "r2_global": 0.8068710667622422
+    },
+    "train|translate_up": {
+      "pairs": 256,
+      "pixels": 4506,
+      "mse": 0.07096425712582449,
+      "identity_mse": 0.11249734599181084,
+      "mse_over_identity": 0.6308082781880942,
+      "r2_global": 0.927063247627194
+    },
+    "val|rot90": {
+      "pairs": 111,
+      "pixels": 2052,
+      "mse": 0.1949031333499227,
+      "identity_mse": 0.638202576569293,
+      "mse_over_identity": 0.3053938365426844,
+      "r2_global": 0.8001576144686005,
+      "counterfactual": false
+    },
+    "val|translate_up": {
+      "pairs": 112,
+      "pixels": 1906,
+      "mse": 0.07313394211580168,
+      "identity_mse": 0.10225747997277759,
+      "mse_over_identity": 0.7151940585204231,
+      "r2_global": 0.9250198009108871,
+      "counterfactual": false
+    },
+    "test|rot90": {
+      "pairs": 111,
+      "pixels": 2064,
+      "mse": 0.20491860234252224,
+      "identity_mse": 0.6566114009874395,
+      "mse_over_identity": 0.3120850506621681,
+      "r2_global": 0.7895510397185495,
+      "counterfactual": false
+    },
+    "test|translate_up": {
+      "pairs": 112,
+      "pixels": 2100,
+      "mse": 0.08125350993568824,
+      "identity_mse": 0.11306968492978739,
+      "mse_over_identity": 0.718614454317654,
+      "r2_global": 0.9164380769268035,
+      "counterfactual": false
+    },
+    "val_ood|translate_up -> rot90": {
+      "pairs": 128,
+      "pixels": 2287,
+      "mse": 0.21164446305162285,
+      "identity_mse": 0.6664419011282525,
+      "mse_over_identity": 0.3175737640345234,
+      "r2_global": 0.781905398410879,
+      "counterfactual": false
+    },
+    "val_ood|rot90 -> translate_up": {
+      "pairs": 128,
+      "pixels": 2335,
+      "mse": 0.2041413080161489,
+      "identity_mse": 0.6604601253282,
+      "mse_over_identity": 0.3090895274180341,
+      "r2_global": 0.7899084522710925,
+      "counterfactual": true
+    },
+    "test_ood|translate_up -> rot90": {
+      "pairs": 128,
+      "pixels": 2165,
+      "mse": 0.21170941382747277,
+      "identity_mse": 0.658156948489408,
+      "mse_over_identity": 0.32167010363316084,
+      "r2_global": 0.7833720255819053,
+      "counterfactual": false
+    },
+    "test_ood|rot90 -> translate_up": {
+      "pairs": 128,
+      "pixels": 2182,
+      "mse": 0.20852346036319686,
+      "identity_mse": 0.6587719954013895,
+      "mse_over_identity": 0.3165335834231138,
+      "r2_global": 0.7866934535502654,
+      "counterfactual": true
+    },
+    "operator_diagnostics": {
+      "dimension_homogeneous": 129,
+      "relative_commutator_frobenius": 0.29553667114348975,
+      "ridge": 1.0,
+      "chart": "image token features; joint ViT uses fixed rot90 function context"
+    }
+  },
+  "probe_train_pairs_per_atomic": 256,
+  "probe_eval_pairs_per_suite": 128
+}

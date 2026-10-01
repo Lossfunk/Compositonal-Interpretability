@@ -1,0 +1,396 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 1,
+  "split": "test_ood",
+  "condition": "CompGen-OOD2",
+  "target_suite": [
+    "translate_up",
+    "rot90"
+  ],
+  "target_indices": [
+    5,
+    171,
+    207,
+    268,
+    311,
+    407,
+    431,
+    457,
+    894,
+    962
+  ],
+  "context": {
+    "5": [
+      {
+        "source_index": 93229,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 70463,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 52699,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 33895,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 81102,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "171": [
+      {
+        "source_index": 73563,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 78151,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 97970,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 46423,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 40962,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "207": [
+      {
+        "source_index": 96877,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 82813,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 72716,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 52955,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 40165,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "268": [
+      {
+        "source_index": 55313,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 80555,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 89206,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 77159,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 36330,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "311": [
+      {
+        "source_index": 84764,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 47441,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 36432,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 75301,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 89728,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ],
+    "407": [
+      {
+        "source_index": 90853,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 45213,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 68048,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 82274,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 36003,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "431": [
+      {
+        "source_index": 48664,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 84582,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 68337,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 34006,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 90257,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ],
+    "457": [
+      {
+        "source_index": 69921,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 46950,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 96058,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 77884,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 38673,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "894": [
+      {
+        "source_index": 89551,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 36493,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 82763,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 54995,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 69635,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "962": [
+      {
+        "source_index": 68905,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 78691,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 54506,
+        "suite": [
+          "rot90",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 98774,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 41987,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "9a6c36050614c04b6da69324e6291072befc49b1c2a3f6595bafd2e17761693c"
+}

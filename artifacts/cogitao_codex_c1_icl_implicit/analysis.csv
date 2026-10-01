@@ -1,0 +1,281 @@
+model,distribution,evaluation_set,source_split,scope,experiment,condition,result_type,transformation,samples,scored_samples,valid_outputs,invalid_outputs,timeouts,codex_errors,exact_grids,grid_accuracy_pct,per_pixel_accuracy_pct
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,composition,change_shape_color -> pad_right,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,composition,crop_bottom_side -> rot90,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,composition,translate_up -> mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,change_shape_color,20,10,10,0,0,10,9,90.0,99.6
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,crop_bottom_side,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,pad_right,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,rot90,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,function,translate_up,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID1,overall,all,50,30,27,3,0,20,25,83.33333333333333,89.77777777777777
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,composition,change_shape_color -> pad_right,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,composition,crop_bottom_side -> rot90,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,composition,translate_up -> mirror_horizontal,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,change_shape_color,20,10,8,2,0,10,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,crop_bottom_side,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,mirror_horizontal,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,pad_right,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,rot90,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,function,translate_up,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,C1,all,CompGen-ID2,overall,all,50,30,25,5,0,20,22,73.33333333333333,83.00740740740741
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID1,composition,translate_up -> mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID1,function,mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID1,function,translate_up,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID1,overall,all,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID2,composition,translate_up -> mirror_horizontal,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID2,function,mirror_horizontal,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID2,function,translate_up,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,experiment,1,CompGen-ID2,overall,all,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID1,composition,change_shape_color -> pad_right,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID1,function,change_shape_color,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID1,function,pad_right,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID1,overall,all,10,10,10,0,0,0,9,90.0,99.6
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID2,composition,change_shape_color -> pad_right,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID2,function,change_shape_color,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID2,function,pad_right,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,experiment,2,CompGen-ID2,overall,all,10,10,8,2,0,0,7,70.0,79.77777777777777
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID1,composition,crop_bottom_side -> rot90,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID1,function,crop_bottom_side,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID1,function,rot90,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID1,overall,all,10,10,9,1,0,0,8,80.0,89.73333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID2,composition,crop_bottom_side -> rot90,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID2,function,crop_bottom_side,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID2,function,rot90,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,experiment,3,CompGen-ID2,overall,all,10,10,7,3,0,0,6,60.0,69.33333333333333
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID1,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID2,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,4,CompGen-ID2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID1,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID2,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,test,test,experiment,5,CompGen-ID2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,composition,change_shape_color -> pad_right,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,composition,crop_bottom_side -> rot90,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,composition,translate_up -> mirror_horizontal,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,change_shape_color,20,10,10,0,0,10,10,100.0,100.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,crop_bottom_side,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,mirror_horizontal,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,pad_right,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,rot90,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,function,translate_up,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID1,overall,all,50,30,28,2,0,20,23,76.66666666666667,92.77037037037037
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,composition,change_shape_color -> pad_right,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,composition,crop_bottom_side -> rot90,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,composition,translate_up -> mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,change_shape_color,20,10,9,1,0,10,9,90.0,90.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,crop_bottom_side,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,pad_right,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,rot90,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,function,translate_up,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,C1,all,CompGen-ID2,overall,all,50,30,27,3,0,20,26,86.66666666666667,89.97037037037038
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID1,composition,translate_up -> mirror_horizontal,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID1,function,mirror_horizontal,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID1,function,translate_up,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID1,overall,all,10,10,9,1,0,0,7,70.0,89.28888888888889
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID2,composition,translate_up -> mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID2,function,mirror_horizontal,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID2,function,translate_up,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,experiment,1,CompGen-ID2,overall,all,10,10,8,2,0,0,8,80.0,80.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID1,composition,change_shape_color -> pad_right,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID1,function,change_shape_color,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID1,function,pad_right,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID1,overall,all,10,10,10,0,0,0,10,100.0,100.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID2,composition,change_shape_color -> pad_right,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID2,function,change_shape_color,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID2,function,pad_right,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,experiment,2,CompGen-ID2,overall,all,10,10,9,1,0,0,9,90.0,90.0
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID1,composition,crop_bottom_side -> rot90,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID1,function,crop_bottom_side,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID1,function,rot90,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID1,overall,all,10,10,9,1,0,0,6,60.0,89.02222222222223
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID2,composition,crop_bottom_side -> rot90,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID2,function,crop_bottom_side,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID2,function,rot90,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,experiment,3,CompGen-ID2,overall,all,10,10,10,0,0,0,9,90.0,99.91111111111111
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID1,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID2,composition,double_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,4,CompGen-ID2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID1,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID2,composition,extend_contours_same_color -> pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,IID,val,val,experiment,5,CompGen-ID2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,rot90,20,0,0,0,0,20,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD1,overall,all,50,0,0,0,0,50,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,rot90,20,0,0,0,0,20,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,C1,all,CompGen-OOD2,overall,all,50,0,0,0,0,50,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD1,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD1,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD1,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD2,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD2,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD2,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,1,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD1,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD1,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD2,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD2,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,2,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD1,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD1,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD1,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD2,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD2,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD2,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,3,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD1,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD1,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD2,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD2,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,4,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD1,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD2,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,test,test_ood,experiment,5,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,rot90,20,0,0,0,0,20,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD1,overall,all,50,0,0,0,0,50,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,rot90,20,0,0,0,0,20,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,C1,all,CompGen-OOD2,overall,all,50,0,0,0,0,50,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD1,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD1,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD1,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD2,composition,translate_up -> rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD2,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD2,function,translate_up,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,1,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD1,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD1,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD1,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD2,composition,pad_right -> change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD2,function,change_shape_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD2,function,pad_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,2,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD1,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD1,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD1,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD2,composition,rot90 -> crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD2,function,crop_bottom_side,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD2,function,rot90,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,3,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD1,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD1,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD1,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD2,composition,double_right -> crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD2,function,crop_contours,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD2,function,double_right,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,4,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD1,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD1,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD1,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD1,overall,all,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD2,composition,pad_left -> extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD2,function,extend_contours_same_color,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD2,function,pad_left,10,0,0,0,0,10,0,,
+gpt-6-sol,OOD,val,val_ood,experiment,5,CompGen-OOD2,overall,all,10,0,0,0,0,10,0,,

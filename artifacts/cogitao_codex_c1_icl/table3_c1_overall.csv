@@ -1,0 +1,9 @@
+task,distribution,evaluation_set,gpt-6-sol Exp.,gpt-6-sol Imp.
+CompGen-ID1,IID,val,41 / 50,23 / 50
+CompGen-ID1,IID,test,34 / 50,25 / 50
+CompGen-ID2,IID,val,30 / 50,26 / 50
+CompGen-ID2,IID,test,38 / 50,22 / 50
+CompGen-OOD1,OOD,val,31 / 50,0 / 50
+CompGen-OOD1,OOD,test,30 / 50,0 / 50
+CompGen-OOD2,OOD,val,28 / 50,0 / 50
+CompGen-OOD2,OOD,test,25 / 50,0 / 50

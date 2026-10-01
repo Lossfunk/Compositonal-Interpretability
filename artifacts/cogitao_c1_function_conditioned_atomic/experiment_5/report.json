@@ -1,0 +1,199 @@
+{
+  "setting": 1,
+  "experiment": 5,
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_5_vit6_function_mlp_cross_attention/run_000/last.ckpt",
+  "device": "cuda",
+  "coverage": [
+    {
+      "split": "val",
+      "total_rows": 1000,
+      "atomic_rows": 334,
+      "composition_rows_skipped": 666
+    },
+    {
+      "split": "val_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    },
+    {
+      "split": "test",
+      "total_rows": 1000,
+      "atomic_rows": 334,
+      "composition_rows_skipped": 666
+    },
+    {
+      "split": "test_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    }
+  ],
+  "metrics": [
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "contour",
+      "samples": 112,
+      "grid_accuracy_pct": 95.53571428571429,
+      "per_pixel_accuracy_pct": 99.95535714285714,
+      "object_per_pixel_accuracy_pct": 99.69952420464584,
+      "cross_entropy_loss": 0.0011261094137408432
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "orientation",
+      "samples": 111,
+      "grid_accuracy_pct": 96.3963963963964,
+      "per_pixel_accuracy_pct": 99.97747747747748,
+      "object_per_pixel_accuracy_pct": 99.7305125266582,
+      "cross_entropy_loss": 0.0008351382657968536
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 111,
+      "grid_accuracy_pct": 98.1981981981982,
+      "per_pixel_accuracy_pct": 99.98873873873873,
+      "object_per_pixel_accuracy_pct": 99.9270142198683,
+      "cross_entropy_loss": 0.00031968395995250943
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "extend_contours_same_color",
+      "samples": 112,
+      "grid_accuracy_pct": 95.53571428571429,
+      "per_pixel_accuracy_pct": 99.95535714285714,
+      "object_per_pixel_accuracy_pct": 99.69952420464584,
+      "cross_entropy_loss": 0.0011261094137408432
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "mirror_vertical",
+      "samples": 111,
+      "grid_accuracy_pct": 96.3963963963964,
+      "per_pixel_accuracy_pct": 99.97747747747748,
+      "object_per_pixel_accuracy_pct": 99.7305125266582,
+      "cross_entropy_loss": 0.0008351382657968536
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "pad_left",
+      "samples": 111,
+      "grid_accuracy_pct": 98.1981981981982,
+      "per_pixel_accuracy_pct": 99.98873873873873,
+      "object_per_pixel_accuracy_pct": 99.9270142198683,
+      "cross_entropy_loss": 0.00031968395995250943
+    },
+    {
+      "split": "val",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 334,
+      "grid_accuracy_pct": 96.7065868263473,
+      "per_pixel_accuracy_pct": 99.97380239520957,
+      "object_per_pixel_accuracy_pct": 99.78542568797836,
+      "cross_entropy_loss": 0.0007614057526860891
+    },
+    {
+      "split": "val_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "contour",
+      "samples": 112,
+      "grid_accuracy_pct": 98.21428571428571,
+      "per_pixel_accuracy_pct": 99.99553571428571,
+      "object_per_pixel_accuracy_pct": 99.96213247733456,
+      "cross_entropy_loss": 0.00028045207830213517
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "orientation",
+      "samples": 111,
+      "grid_accuracy_pct": 90.990990990991,
+      "per_pixel_accuracy_pct": 99.83558558558559,
+      "object_per_pixel_accuracy_pct": 97.46291173605232,
+      "cross_entropy_loss": 0.005335933433379978
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 111,
+      "grid_accuracy_pct": 96.3963963963964,
+      "per_pixel_accuracy_pct": 99.94594594594595,
+      "object_per_pixel_accuracy_pct": 99.5122989555737,
+      "cross_entropy_loss": 0.0017852561161146752
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "extend_contours_same_color",
+      "samples": 112,
+      "grid_accuracy_pct": 98.21428571428571,
+      "per_pixel_accuracy_pct": 99.99553571428571,
+      "object_per_pixel_accuracy_pct": 99.96213247733456,
+      "cross_entropy_loss": 0.00028045207830213517
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "mirror_vertical",
+      "samples": 111,
+      "grid_accuracy_pct": 90.990990990991,
+      "per_pixel_accuracy_pct": 99.83558558558559,
+      "object_per_pixel_accuracy_pct": 97.46291173605232,
+      "cross_entropy_loss": 0.005335933433379978
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "pad_left",
+      "samples": 111,
+      "grid_accuracy_pct": 96.3963963963964,
+      "per_pixel_accuracy_pct": 99.94594594594595,
+      "object_per_pixel_accuracy_pct": 99.5122989555737,
+      "cross_entropy_loss": 0.0017852561161146752
+    },
+    {
+      "split": "test",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 334,
+      "grid_accuracy_pct": 95.20958083832335,
+      "per_pixel_accuracy_pct": 99.92589820359281,
+      "object_per_pixel_accuracy_pct": 98.98205755758072,
+      "cross_entropy_loss": 0.002460666684921394
+    },
+    {
+      "split": "test_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    }
+  ],
+  "notes": [
+    "Only transformation suites of length one were evaluated.",
+    "Attribute groups describe the affected property; a function may belong to multiple groups.",
+    "Observed fill color is inferred from target cells that were background in the input; it is not a recorded function argument."
+  ]
+}

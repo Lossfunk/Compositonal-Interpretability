@@ -1,0 +1,114 @@
+experiment_name: cogitao_c1_joint_token_vit
+seed: 42
+
+model:
+  class_path: benchmarks.cogitao_vit_cross_attention.joint_token_model.JointTokenViTTransformationModel
+  config:
+    input_resolution: [20, 20]
+    max_task_tokens: 2
+    validation_split_names: [val, val_ood]
+    test_split_names: [test, test_ood]
+    fail_on_nonfinite: true
+    encoder:
+      patch_size: 1
+      hidden_dim: 128
+      num_layers: 6
+      num_heads: 4
+      mlp_dim: 512
+      dropout: 0.0
+
+trainer:
+  float32_matmul_precision: high
+  optimizer:
+    type: AdamW
+    config:
+      lr: 0.001
+      weight_decay: 0.001
+    schedule:
+      warmup_steps: 200
+      min_lr_ratio: 0.01
+  config:
+    max_epochs: 200
+    accelerator: gpu
+    devices: 1
+    precision: 32-true
+    benchmark: true
+    gradient_clip_val: 1.0
+    log_every_n_steps: 10
+
+logging:
+  project: cogitao-compgen-slot-attention
+  name: cogitao_c1_joint_token_vit
+  group: compgen-c1-joint-token-vit
+  training_loss_names: [cross_entropy_loss]
+  save_dir: runs
+  log_model: false
+  offline: false
+  tags: [cogitao, compgen, c1, joint-function-image-tokens, independent-vit]
+
+callbacks:
+  checkpoint:
+    dirpath: checkpoints/cogitao_joint_token_vit/cogitao_c1_joint_token_vit
+    filename: "{epoch:03d}"
+    monitor: val/ood/cross_entropy_loss
+    mode: min
+    save_top_k: 3
+    save_last: false
+  training_progress:
+    enabled: true
+    milestones:
+      025pct: 0.25
+      050pct: 0.50
+      075pct: 0.75
+      100pct: 1.0
+    rolling_filename: last.ckpt
+    start_filename: milestone_start.ckpt
+    training_end_filename: training_end.ckpt
+    exception_filename: interrupted.ckpt
+    save_on_exception: true
+
+data:
+  validation_split_names: [val, val_ood]
+  test_split_names: [test, test_ood]
+  train:
+    class_path: cogitao.cogitao.v0Dataset
+    init_args: &dataset_defaults
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: train
+      image_size: [20, 20]
+      image_field: input
+      return_target: true
+      representation: one_hot
+      return_task_tokens: true
+      max_task_tokens: 2
+      return_metadata: true
+  val:
+    class_path: cogitao.cogitao.v0Dataset
+    init_args:
+      <<: *dataset_defaults
+      split: val
+  val_ood:
+    class_path: cogitao.cogitao.v0Dataset
+    init_args:
+      <<: *dataset_defaults
+      split: val_ood
+  test:
+    class_path: cogitao.cogitao.v0Dataset
+    init_args:
+      <<: *dataset_defaults
+      split: test
+  test_ood:
+    class_path: cogitao.cogitao.v0Dataset
+    init_args:
+      <<: *dataset_defaults
+      split: test_ood
+  loader:
+    batch_size: 64
+    val_batch_size: 64
+    shuffle: true
+    num_workers: 8
+    pin_memory: true
+    drop_last: true
+    persistent_workers: true

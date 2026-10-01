@@ -1,0 +1,402 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 4,
+  "split": "test_ood",
+  "condition": "CompGen-OOD2",
+  "target_suite": [
+    "double_right",
+    "crop_contours"
+  ],
+  "target_indices": [
+    3,
+    8,
+    13,
+    28,
+    32,
+    33,
+    48,
+    53,
+    56,
+    75
+  ],
+  "context": {
+    "3": [
+      {
+        "source_index": 49207,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 89933,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 85910,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 72978,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 35265,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "source_index": 66797,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 95604,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 34355,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 54426,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 88449,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "source_index": 99931,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 52570,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 82323,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 74146,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 35342,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      }
+    ],
+    "28": [
+      {
+        "source_index": 88900,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 68019,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 83814,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 54159,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 34826,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      }
+    ],
+    "32": [
+      {
+        "source_index": 54057,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 37514,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 88047,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 96576,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 70562,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "33": [
+      {
+        "source_index": 99076,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 68817,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 52863,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 41798,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 88838,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "48": [
+      {
+        "source_index": 74706,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 90935,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 51983,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 38579,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 83019,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "53": [
+      {
+        "source_index": 73807,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 92085,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 53403,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 81915,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 43713,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      }
+    ],
+    "56": [
+      {
+        "source_index": 99804,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 38050,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 86045,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 76276,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 47447,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      }
+    ],
+    "75": [
+      {
+        "source_index": 82667,
+        "suite": [
+          "crop_contours",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 72562,
+        "suite": [
+          "double_right",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 38312,
+        "suite": [
+          "double_right",
+          "double_right"
+        ]
+      },
+      {
+        "source_index": 53386,
+        "suite": [
+          "crop_contours",
+          "crop_contours"
+        ]
+      },
+      {
+        "source_index": 95171,
+        "suite": [
+          "change_shape_color",
+          "double_right"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "8e08a465fe641931b9cb9b781d14fff5128da336ed997c2c851d2742e9553967",
+  "embedding": "implicit",
+  "task_code_map": {
+    "change_shape_color": "t1",
+    "crop_contours": "t2",
+    "double_right": "t3"
+  }
+}

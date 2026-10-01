@@ -1,0 +1,179 @@
+{
+  "setting": 1,
+  "experiment": 1,
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/last.ckpt",
+  "device": "cuda",
+  "coverage": [
+    {
+      "split": "val",
+      "total_rows": 1000,
+      "atomic_rows": 334,
+      "composition_rows_skipped": 666
+    },
+    {
+      "split": "val_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    },
+    {
+      "split": "test",
+      "total_rows": 1000,
+      "atomic_rows": 334,
+      "composition_rows_skipped": 666
+    },
+    {
+      "split": "test_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    }
+  ],
+  "metrics": [
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "orientation",
+      "samples": 222,
+      "grid_accuracy_pct": 64.86486486486487,
+      "per_pixel_accuracy_pct": 99.66441441441441,
+      "object_per_pixel_accuracy_pct": 95.52252766516831,
+      "cross_entropy_loss": 0.011458359579573389
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 112,
+      "grid_accuracy_pct": 91.96428571428571,
+      "per_pixel_accuracy_pct": 99.94642857142857,
+      "object_per_pixel_accuracy_pct": 99.32055872465882,
+      "cross_entropy_loss": 0.00239880105723062
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "mirror_horizontal",
+      "samples": 111,
+      "grid_accuracy_pct": 81.98198198198199,
+      "per_pixel_accuracy_pct": 99.83333333333333,
+      "object_per_pixel_accuracy_pct": 97.30480930826685,
+      "cross_entropy_loss": 0.007445962887024244
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "rot90",
+      "samples": 111,
+      "grid_accuracy_pct": 47.747747747747745,
+      "per_pixel_accuracy_pct": 99.49549549549549,
+      "object_per_pixel_accuracy_pct": 93.74024602206978,
+      "cross_entropy_loss": 0.015470756272122532
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "translate_up",
+      "samples": 112,
+      "grid_accuracy_pct": 91.96428571428571,
+      "per_pixel_accuracy_pct": 99.94642857142857,
+      "object_per_pixel_accuracy_pct": 99.32055872465882,
+      "cross_entropy_loss": 0.00239880105723062
+    },
+    {
+      "split": "val",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 334,
+      "grid_accuracy_pct": 73.95209580838323,
+      "per_pixel_accuracy_pct": 99.75898203592814,
+      "object_per_pixel_accuracy_pct": 96.79611891865017,
+      "cross_entropy_loss": 0.008420423787650065
+    },
+    {
+      "split": "val_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "orientation",
+      "samples": 222,
+      "grid_accuracy_pct": 68.46846846846847,
+      "per_pixel_accuracy_pct": 99.67792792792793,
+      "object_per_pixel_accuracy_pct": 95.94472348354421,
+      "cross_entropy_loss": 0.010090568998747511
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 112,
+      "grid_accuracy_pct": 89.28571428571429,
+      "per_pixel_accuracy_pct": 99.87946428571429,
+      "object_per_pixel_accuracy_pct": 98.27226719685963,
+      "cross_entropy_loss": 0.0030837786108687784
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "mirror_horizontal",
+      "samples": 111,
+      "grid_accuracy_pct": 89.1891891891892,
+      "per_pixel_accuracy_pct": 99.93468468468468,
+      "object_per_pixel_accuracy_pct": 99.14401098414584,
+      "cross_entropy_loss": 0.002275768814035293
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "rot90",
+      "samples": 111,
+      "grid_accuracy_pct": 47.747747747747745,
+      "per_pixel_accuracy_pct": 99.42117117117117,
+      "object_per_pixel_accuracy_pct": 92.74543598294258,
+      "cross_entropy_loss": 0.01790536918345973
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "translate_up",
+      "samples": 112,
+      "grid_accuracy_pct": 89.28571428571429,
+      "per_pixel_accuracy_pct": 99.87946428571429,
+      "object_per_pixel_accuracy_pct": 98.27226719685963,
+      "cross_entropy_loss": 0.0030837786108687784
+    },
+    {
+      "split": "test",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 334,
+      "grid_accuracy_pct": 75.44910179640719,
+      "per_pixel_accuracy_pct": 99.74550898203593,
+      "object_per_pixel_accuracy_pct": 96.72521718381765,
+      "cross_entropy_loss": 0.00774098659323129
+    },
+    {
+      "split": "test_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    }
+  ],
+  "notes": [
+    "Only transformation suites of length one were evaluated.",
+    "Attribute groups describe the affected property; a function may belong to multiple groups.",
+    "Observed fill color is inferred from target cells that were background in the input; it is not a recorded function argument."
+  ]
+}

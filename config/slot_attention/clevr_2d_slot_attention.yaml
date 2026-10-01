@@ -1,0 +1,161 @@
+experiment_name: slot_attention_clevr_2d
+seed: 42
+
+model:
+  class_path: slot_attention.model.SlotAttentionObjectDiscoveryModel
+  config:
+    input_resolution: [96, 96]
+    # One slot per object plus a background slot, plus one spare so the
+    # "unused slots stay empty" behaviour is visible.
+    num_slots: 4
+    slot_dim: 64
+    num_iterations: 3
+    slot_mlp_hidden_dim: 128
+    implicit_differentiation: false
+    # The paper trains on images scaled to [-1, 1] with a linear decoder head.
+    image_range: signed
+    validation_split_names: [iid, ood]
+    fail_on_nonfinite: true
+
+    encoder:
+      patch_size: 8
+      hidden_dim: 192
+      num_layers: 3
+      num_heads: 6
+      mlp_dim: 512
+      output_dim: 64
+      bottleneck_hidden_dim: 192
+
+    decoder:
+      # 6x6 broadcast grid upsampled four times to 96x96.
+      channels: [64, 64, 64, 64]
+      kernel_size: 5
+      output_activation: none
+
+    eval_plots:
+      enabled:
+        - validation_reconstructions
+        - slot_decomposition
+        - slot_representation_pca
+      max_reconstruction_samples: 8
+      max_decomposition_samples: 6
+      max_slot_pca_samples: 512
+      every_n_epochs: 5
+
+    loss_weights:
+      reconstruction_loss: 1.0
+
+trainer:
+  float32_matmul_precision: high
+  optimizer:
+    type: Adam
+    config:
+      lr: 0.0004
+    schedule:
+      warmup_steps: 10000
+      decay_steps: 100000
+      decay_rate: 0.5
+  config:
+    max_epochs: 200
+    accelerator: gpu
+    devices: 1
+    # Slot Attention's softmax-over-slots competition and the GRU update are
+    # sensitive to reduced precision; keep the whole model in fp32.
+    precision: 32-true
+    benchmark: true
+    gradient_clip_val: 1.0
+    log_every_n_steps: 10
+
+logging:
+  project: compositional-learning
+  name: clevr_2d_slot_attention
+  training_loss_names: [reconstruction_loss]
+  log_validation_losses: true
+  log_stability_metrics: false
+  save_dir: runs
+  log_model: false
+  offline: false
+  tags: [clevr-2d, slot-attention, object-discovery, gru, tiny-vit, replication]
+
+callbacks:
+  checkpoint:
+    dirpath: checkpoints/slot_attention/clevr_2d_slot_attention
+    filename: "{epoch:03d}-{val_iid_foreground_ari:.4f}"
+    monitor: val_iid_foreground_ari
+    mode: max
+    save_top_k: 3
+    # The independent progress callback below owns last.ckpt. Keeping this
+    # false prevents metric-based top-k behavior from leaving it stale.
+    save_last: false
+  training_progress:
+    enabled: true
+    # Save fixed snapshots after 25%, 50%, 75%, and 100% of max_epochs,
+    # independently of validation quality. It also saves milestone_start.ckpt,
+    # training_end.ckpt, interrupted.ckpt on failure, and a rolling last.ckpt.
+    milestones:
+      025pct: 0.25
+      050pct: 0.50
+      075pct: 0.75
+      100pct: 1.0
+    rolling_filename: last.ckpt
+    start_filename: milestone_start.ckpt
+    training_end_filename: training_end.ckpt
+    exception_filename: interrupted.ckpt
+    save_on_exception: true
+
+data:
+  heldout_combinations: &heldout_combinations
+    - red circle
+    - green square
+    - blue triangle
+    - yellow pentagon
+    - cyan star
+  validation_split_names: [val_iid, val_ood]
+
+  train:
+    class_path: clevr_2d.clevr_2d.v0Dataset
+    init_args: &scene_defaults
+      return_metadata: true
+      return_masks: false
+      image_size: [96, 96]
+      num_samples: 40000
+      num_objects: 2
+      shapes: [circle, square, triangle, pentagon, star]
+      colors: [red, green, blue, yellow, cyan]
+      size_range: [17, 36]
+      center_range: [16, 80]
+      min_object_gap: 3
+      max_placement_attempts: 128
+      heldout_combinations: *heldout_combinations
+      scene_types: [iid_iid]
+
+  val_iid:
+    class_path: clevr_2d.clevr_2d.v0Dataset
+    init_args:
+      <<: *scene_defaults
+      # Instance masks are never used as a training signal; they only score
+      # the unsupervised segmentation with FG-ARI.
+      return_masks: true
+      deterministic: true
+      seed: 1042
+      num_samples: 4000
+      scene_types: [iid_iid]
+
+  val_ood:
+    class_path: clevr_2d.clevr_2d.v0Dataset
+    init_args:
+      <<: *scene_defaults
+      return_masks: true
+      deterministic: true
+      seed: 2042
+      num_samples: 4000
+      scene_types: [ood_ood, ood_iid]
+
+  loader:
+    batch_size: 256
+    val_batch_size: 256
+    shuffle: true
+    num_workers: 8
+    pin_memory: true
+    drop_last: true
+    persistent_workers: true

@@ -1,0 +1,402 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 2,
+  "split": "test",
+  "condition": "CompGen-ID2",
+  "target_suite": [
+    "change_shape_color",
+    "pad_right"
+  ],
+  "target_indices": [
+    911,
+    921,
+    935,
+    939,
+    943,
+    958,
+    959,
+    974,
+    984,
+    989
+  ],
+  "context": {
+    "911": [
+      {
+        "source_index": 88045,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 61130,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 77680,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 54404,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 91152,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      }
+    ],
+    "921": [
+      {
+        "source_index": 98710,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 64435,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 77269,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 55006,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 86273,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "935": [
+      {
+        "source_index": 94891,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 51450,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 36474,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 68743,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 84203,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "939": [
+      {
+        "source_index": 91811,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 79449,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 60247,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 31740,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 86115,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "943": [
+      {
+        "source_index": 80448,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 52500,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 97844,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 76307,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 64633,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "958": [
+      {
+        "source_index": 74195,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 99688,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 35138,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 50971,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 60079,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "959": [
+      {
+        "source_index": 34484,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 53718,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 67211,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 85589,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 72318,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "974": [
+      {
+        "source_index": 85762,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 63660,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 96957,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 71930,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 51485,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "984": [
+      {
+        "source_index": 57734,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 96185,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 30941,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 80202,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 76724,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "989": [
+      {
+        "source_index": 70549,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 63148,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 59939,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 97175,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 33467,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "166750c8a0cb8746986ed46cd743d56942fb6bd124dcb998d9e92a51b8f5031f",
+  "embedding": "implicit",
+  "task_code_map": {
+    "change_shape_color": "t1",
+    "fill_holes_different_color": "t2",
+    "pad_right": "t3"
+  }
+}

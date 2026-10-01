@@ -1,0 +1,19 @@
+name: cogitao-compgen-c1-direct-patch-decoder
+description: C1 direct transformation from input patch embeddings through a six-layer decoder to output patches, without function conditioning.
+
+method: grid
+metric:
+  name: val/ood/grid_accuracy
+  goal: maximize
+
+program: benchmarks.cogitao_vit_cross_attention.run
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - ${program}
+  - ${args}
+
+parameters:
+  experiment:
+    values: [1, 2, 3, 4, 5]

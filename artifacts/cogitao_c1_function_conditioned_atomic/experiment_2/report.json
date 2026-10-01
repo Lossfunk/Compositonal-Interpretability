@@ -1,0 +1,499 @@
+{
+  "setting": 1,
+  "experiment": 2,
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_2_vit6_function_mlp_cross_attention/run_000/last.ckpt",
+  "device": "cuda",
+  "coverage": [
+    {
+      "split": "val",
+      "total_rows": 1000,
+      "atomic_rows": 300,
+      "composition_rows_skipped": 700
+    },
+    {
+      "split": "val_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    },
+    {
+      "split": "test",
+      "total_rows": 1000,
+      "atomic_rows": 300,
+      "composition_rows_skipped": 700
+    },
+    {
+      "split": "test_ood",
+      "total_rows": 1000,
+      "atomic_rows": 0,
+      "composition_rows_skipped": 1000
+    }
+  ],
+  "metrics": [
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "color",
+      "samples": 200,
+      "grid_accuracy_pct": 97.5,
+      "per_pixel_accuracy_pct": 99.97625,
+      "object_per_pixel_accuracy_pct": 99.80179676413536,
+      "cross_entropy_loss": 0.0004764669766280122
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "interior",
+      "samples": 100,
+      "grid_accuracy_pct": 98.0,
+      "per_pixel_accuracy_pct": 99.99,
+      "object_per_pixel_accuracy_pct": 99.9321266412735,
+      "cross_entropy_loss": 0.0001325842078105552
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 100,
+      "grid_accuracy_pct": 94.0,
+      "per_pixel_accuracy_pct": 99.965,
+      "object_per_pixel_accuracy_pct": 99.66699951887131,
+      "cross_entropy_loss": 0.0009955463754939046
+    },
+    {
+      "split": "val",
+      "group_by": "attribute",
+      "group": "shape",
+      "samples": 100,
+      "grid_accuracy_pct": 97.0,
+      "per_pixel_accuracy_pct": 99.9625,
+      "object_per_pixel_accuracy_pct": 99.67146688699722,
+      "cross_entropy_loss": 0.0008203497454454691
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "change_shape_color",
+      "samples": 100,
+      "grid_accuracy_pct": 97.0,
+      "per_pixel_accuracy_pct": 99.9625,
+      "object_per_pixel_accuracy_pct": 99.67146688699722,
+      "cross_entropy_loss": 0.0008203497454454691
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "fill_holes_different_color",
+      "samples": 100,
+      "grid_accuracy_pct": 98.0,
+      "per_pixel_accuracy_pct": 99.99,
+      "object_per_pixel_accuracy_pct": 99.9321266412735,
+      "cross_entropy_loss": 0.0001325842078105552
+    },
+    {
+      "split": "val",
+      "group_by": "function",
+      "group": "pad_right",
+      "samples": 100,
+      "grid_accuracy_pct": 94.0,
+      "per_pixel_accuracy_pct": 99.965,
+      "object_per_pixel_accuracy_pct": 99.66699951887131,
+      "cross_entropy_loss": 0.0009955463754939046
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=1",
+      "samples": 2,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 2.167256461689249e-06
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=3",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.8959067529067397e-06
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=4",
+      "samples": 3,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.1181110979426497e-06
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=5",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 6.143155042082072e-06
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=7",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.0446342639625072e-05
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=9",
+      "samples": 4,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 7.324904208871885e-07
+    },
+    {
+      "split": "val",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=multiple",
+      "samples": 88,
+      "grid_accuracy_pct": 97.72727272727273,
+      "per_pixel_accuracy_pct": 99.98863636363636,
+      "object_per_pixel_accuracy_pct": 99.92287118326534,
+      "cross_entropy_loss": 0.00015033314282636534
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "1",
+      "samples": 2,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 2.167256461689249e-06
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "3",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.8959067529067397e-06
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "4",
+      "samples": 3,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.1181110979426497e-06
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "5",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 6.143155042082072e-06
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "7",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.0446342639625072e-05
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "9",
+      "samples": 4,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 7.324904208871885e-07
+    },
+    {
+      "split": "val",
+      "group_by": "observed_fill_color",
+      "group": "multiple",
+      "samples": 88,
+      "grid_accuracy_pct": 97.72727272727273,
+      "per_pixel_accuracy_pct": 99.98863636363636,
+      "object_per_pixel_accuracy_pct": 99.92287118326534,
+      "cross_entropy_loss": 0.00015033314282636534
+    },
+    {
+      "split": "val",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 300,
+      "grid_accuracy_pct": 96.33333333333333,
+      "per_pixel_accuracy_pct": 99.9725,
+      "object_per_pixel_accuracy_pct": 99.75686434904735,
+      "cross_entropy_loss": 0.0006494934429166429
+    },
+    {
+      "split": "val_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "color",
+      "samples": 200,
+      "grid_accuracy_pct": 99.0,
+      "per_pixel_accuracy_pct": 99.99375,
+      "object_per_pixel_accuracy_pct": 99.93736842274666,
+      "cross_entropy_loss": 0.00031881412445432033
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "interior",
+      "samples": 100,
+      "grid_accuracy_pct": 99.0,
+      "per_pixel_accuracy_pct": 99.99,
+      "object_per_pixel_accuracy_pct": 99.89473682641983,
+      "cross_entropy_loss": 0.00041212271794277056
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "position",
+      "samples": 100,
+      "grid_accuracy_pct": 95.0,
+      "per_pixel_accuracy_pct": 99.9125,
+      "object_per_pixel_accuracy_pct": 99.13604575395584,
+      "cross_entropy_loss": 0.004434495266250997
+    },
+    {
+      "split": "test",
+      "group_by": "attribute",
+      "group": "shape",
+      "samples": 100,
+      "grid_accuracy_pct": 99.0,
+      "per_pixel_accuracy_pct": 99.9975,
+      "object_per_pixel_accuracy_pct": 99.98000001907349,
+      "cross_entropy_loss": 0.0002255055309658701
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "change_shape_color",
+      "samples": 100,
+      "grid_accuracy_pct": 99.0,
+      "per_pixel_accuracy_pct": 99.9975,
+      "object_per_pixel_accuracy_pct": 99.98000001907349,
+      "cross_entropy_loss": 0.0002255055309658701
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "fill_holes_different_color",
+      "samples": 100,
+      "grid_accuracy_pct": 99.0,
+      "per_pixel_accuracy_pct": 99.99,
+      "object_per_pixel_accuracy_pct": 99.89473682641983,
+      "cross_entropy_loss": 0.00041212271794277056
+    },
+    {
+      "split": "test",
+      "group_by": "function",
+      "group": "pad_right",
+      "samples": 100,
+      "grid_accuracy_pct": 95.0,
+      "per_pixel_accuracy_pct": 99.9125,
+      "object_per_pixel_accuracy_pct": 99.13604575395584,
+      "cross_entropy_loss": 0.004434495266250997
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=1",
+      "samples": 2,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.8149102106690407e-05
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=2",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 0.0002555136755108833
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=4",
+      "samples": 4,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 6.491169606306357e-06
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=7",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 3.543465572874993e-07
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=8",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 0.0002081301435828209
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=9",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.0847988960449583e-07
+    },
+    {
+      "split": "test",
+      "group_by": "function_fill_color",
+      "group": "fill_holes_different_color:color=multiple",
+      "samples": 90,
+      "grid_accuracy_pct": 98.88888888888889,
+      "per_pixel_accuracy_pct": 99.9888888888889,
+      "object_per_pixel_accuracy_pct": 99.88304091824426,
+      "cross_entropy_loss": 0.0004520655807344206
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "1",
+      "samples": 2,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.8149102106690407e-05
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "2",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 0.0002555136755108833
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "4",
+      "samples": 4,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 6.491169606306357e-06
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "7",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 3.543465572874993e-07
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "8",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 0.0002081301435828209
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "9",
+      "samples": 1,
+      "grid_accuracy_pct": 100.0,
+      "per_pixel_accuracy_pct": 100.0,
+      "object_per_pixel_accuracy_pct": 100.0,
+      "cross_entropy_loss": 1.0847988960449583e-07
+    },
+    {
+      "split": "test",
+      "group_by": "observed_fill_color",
+      "group": "multiple",
+      "samples": 90,
+      "grid_accuracy_pct": 98.88888888888889,
+      "per_pixel_accuracy_pct": 99.9888888888889,
+      "object_per_pixel_accuracy_pct": 99.88304091824426,
+      "cross_entropy_loss": 0.0004520655807344206
+    },
+    {
+      "split": "test",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 300,
+      "grid_accuracy_pct": 97.66666666666667,
+      "per_pixel_accuracy_pct": 99.96666666666667,
+      "object_per_pixel_accuracy_pct": 99.67026086648305,
+      "cross_entropy_loss": 0.0016907078383865458
+    },
+    {
+      "split": "test_ood",
+      "group_by": "overall",
+      "group": "all_atomic",
+      "samples": 0,
+      "grid_accuracy_pct": null,
+      "per_pixel_accuracy_pct": null,
+      "object_per_pixel_accuracy_pct": null,
+      "cross_entropy_loss": null
+    }
+  ],
+  "notes": [
+    "Only transformation suites of length one were evaluated.",
+    "Attribute groups describe the affected property; a function may belong to multiple groups.",
+    "Observed fill color is inferred from target cells that were background in the input; it is not a recorded function argument."
+  ]
+}

@@ -1,0 +1,18 @@
+name: cogitao-c1-exp1-rot90-translate-up-progressive-eval
+description: Evaluate atomic rot90 and translate_up over every distinct saved C1 experiment-1 checkpoint step.
+method: grid
+metric:
+  name: val/grid_accuracy_pct
+  goal: maximize
+program: benchmarks.cogitao_vit_cross_attention.eval_atomic_progression_c1
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - ${program}
+  - --wandb-mode
+  - online
+  - ${args}
+parameters:
+  function:
+    values: [rot90, translate_up]

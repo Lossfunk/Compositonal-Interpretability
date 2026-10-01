@@ -1,0 +1,402 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 1,
+  "split": "test",
+  "condition": "CompGen-ID2",
+  "target_suite": [
+    "translate_up",
+    "mirror_horizontal"
+  ],
+  "target_indices": [
+    667,
+    670,
+    679,
+    695,
+    700,
+    706,
+    715,
+    730,
+    742,
+    755
+  ],
+  "context": {
+    "667": [
+      {
+        "source_index": 57069,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 87189,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 43264,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 91150,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 72911,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "670": [
+      {
+        "source_index": 75935,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 62119,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 82036,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 90651,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 38692,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "679": [
+      {
+        "source_index": 98077,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 80691,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 65725,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 71018,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 39880,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "695": [
+      {
+        "source_index": 61848,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 97053,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 41986,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 69703,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 88256,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "700": [
+      {
+        "source_index": 61086,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 82791,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 41389,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 90459,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 71184,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "706": [
+      {
+        "source_index": 63711,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 41122,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 81219,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 72808,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 98198,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ],
+    "715": [
+      {
+        "source_index": 81052,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 39237,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 98268,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 64621,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 76208,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "730": [
+      {
+        "source_index": 70246,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 89225,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 33586,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 59948,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 85895,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      }
+    ],
+    "742": [
+      {
+        "source_index": 84297,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 69712,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 91840,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      },
+      {
+        "source_index": 64536,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 43052,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      }
+    ],
+    "755": [
+      {
+        "source_index": 78108,
+        "suite": [
+          "rot90",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 75218,
+        "suite": [
+          "translate_up",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 65264,
+        "suite": [
+          "mirror_horizontal",
+          "mirror_horizontal"
+        ]
+      },
+      {
+        "source_index": 44411,
+        "suite": [
+          "translate_up",
+          "translate_up"
+        ]
+      },
+      {
+        "source_index": 89702,
+        "suite": [
+          "mirror_horizontal",
+          "rot90"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "166750c8a0cb8746986ed46cd743d56942fb6bd124dcb998d9e92a51b8f5031f",
+  "embedding": "implicit",
+  "task_code_map": {
+    "mirror_horizontal": "t1",
+    "rot90": "t2",
+    "translate_up": "t3"
+  }
+}

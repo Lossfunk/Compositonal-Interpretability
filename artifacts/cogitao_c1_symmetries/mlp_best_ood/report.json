@@ -1,0 +1,241 @@
+{
+  "model": "mlp",
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/epoch=021.ckpt",
+  "global_step": 8580,
+  "trained_checkpoint": true,
+  "model_resolution": [
+    20,
+    20
+  ],
+  "raw_resolution": [
+    15,
+    15
+  ],
+  "geometry_coverage": {
+    "test_ood|translate_up -> rot90|recorded_exact": 1000,
+    "test_ood|translate_up -> rot90|recorded_supported": 1000,
+    "test_ood|translate_up -> rot90|reverse_out_of_grid": 23,
+    "test_ood|translate_up -> rot90|reverse_supported": 977,
+    "test_ood|translate_up -> rot90|reverse_unsupported": 23,
+    "test_ood|translate_up -> rot90|same_final_grid": 977,
+    "test_ood|translate_up -> rot90|same_pixel_matrix": 977,
+    "test|rot90|recorded_exact": 111,
+    "test|rot90|recorded_supported": 111,
+    "test|translate_up|recorded_exact": 112,
+    "test|translate_up|recorded_supported": 112,
+    "train|rot90|recorded_exact": 256,
+    "train|rot90|recorded_supported": 256,
+    "train|translate_up|recorded_exact": 256,
+    "train|translate_up|recorded_supported": 256,
+    "val_ood|translate_up -> rot90|recorded_exact": 1000,
+    "val_ood|translate_up -> rot90|recorded_supported": 1000,
+    "val_ood|translate_up -> rot90|reverse_out_of_grid": 21,
+    "val_ood|translate_up -> rot90|reverse_supported": 979,
+    "val_ood|translate_up -> rot90|reverse_unsupported": 21,
+    "val_ood|translate_up -> rot90|same_final_grid": 979,
+    "val_ood|translate_up -> rot90|same_pixel_matrix": 979,
+    "val|rot90|recorded_exact": 111,
+    "val|rot90|recorded_supported": 111,
+    "val|translate_up|recorded_exact": 112,
+    "val|translate_up|recorded_supported": 112
+  },
+  "matrix_example": {
+    "split": "val_ood",
+    "source_index": 0,
+    "raw_grid_shape": [
+      15,
+      15
+    ]
+  },
+  "attribute_matrices_commute": true,
+  "direct_model": {
+    "val|rot90": {
+      "samples": 111,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9357657657657658,
+      "object_pixel_accuracy": 0.2796311292562399,
+      "cross_entropy": 0.15354929331186656,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val|translate_up": {
+      "samples": 112,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9461383928571429,
+      "object_pixel_accuracy": 0.37480341110910687,
+      "cross_entropy": 0.12537998471941267,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test|rot90": {
+      "samples": 111,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9322747747747748,
+      "object_pixel_accuracy": 0.2659450823122317,
+      "cross_entropy": 0.16042394414678351,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test|translate_up": {
+      "samples": 112,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9429910714285714,
+      "object_pixel_accuracy": 0.37256536739213125,
+      "cross_entropy": 0.13539938245500838,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val_ood|translate_up -> rot90": {
+      "samples": 1000,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9350675,
+      "object_pixel_accuracy": 0.2778093470335007,
+      "cross_entropy": 0.1651600425720215,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "val_ood|translate_up -> rot90|paired_reverse_subset": {
+      "samples": 979,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9351149131767109,
+      "object_pixel_accuracy": 0.27744098240557197,
+      "cross_entropy": 0.16482257566364356,
+      "counterfactual": false,
+      "paired_reverse_subset": true
+    },
+    "val_ood|rot90 -> translate_up": {
+      "samples": 979,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9346859039836568,
+      "object_pixel_accuracy": 0.2692544930314872,
+      "cross_entropy": 0.16355127196268116,
+      "counterfactual": true,
+      "paired_reverse_subset": false
+    },
+    "test_ood|translate_up -> rot90": {
+      "samples": 1000,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.936125,
+      "object_pixel_accuracy": 0.28499216222763063,
+      "cross_entropy": 0.16287975540161131,
+      "counterfactual": false,
+      "paired_reverse_subset": false
+    },
+    "test_ood|translate_up -> rot90|paired_reverse_subset": {
+      "samples": 977,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9362589559877175,
+      "object_pixel_accuracy": 0.28570718042926146,
+      "cross_entropy": 0.1621474863636091,
+      "counterfactual": false,
+      "paired_reverse_subset": true
+    },
+    "test_ood|rot90 -> translate_up": {
+      "samples": 977,
+      "exact_grid_accuracy": 0.0,
+      "pixel_accuracy": 0.9361949846468782,
+      "object_pixel_accuracy": 0.27981821175363436,
+      "cross_entropy": 0.16119654675955172,
+      "counterfactual": true,
+      "paired_reverse_subset": false
+    }
+  },
+  "latent_probe": {
+    "train|rot90": {
+      "pairs": 256,
+      "pixels": 4371,
+      "mse": 0.034581371999043146,
+      "identity_mse": 0.05555782619089878,
+      "mse_over_identity": 0.6224392559964504,
+      "r2_global": 0.9654044182946694
+    },
+    "train|translate_up": {
+      "pairs": 256,
+      "pixels": 4506,
+      "mse": 0.008113653738072771,
+      "identity_mse": 0.03418514456267641,
+      "mse_over_identity": 0.23734443255598564,
+      "r2_global": 0.9918834629677532
+    },
+    "val|rot90": {
+      "pairs": 111,
+      "pixels": 2052,
+      "mse": 0.06676880527526588,
+      "identity_mse": 0.05251697381564871,
+      "mse_over_identity": 1.2713757176802616,
+      "r2_global": 0.9332056930145292,
+      "counterfactual": false
+    },
+    "val|translate_up": {
+      "pairs": 112,
+      "pixels": 1906,
+      "mse": 0.013000419647249507,
+      "identity_mse": 0.03469470452668939,
+      "mse_over_identity": 0.3747090463689855,
+      "r2_global": 0.9869985274767115,
+      "counterfactual": false
+    },
+    "test|rot90": {
+      "pairs": 111,
+      "pixels": 2064,
+      "mse": 0.06657436910775837,
+      "identity_mse": 0.05314074229655093,
+      "mse_over_identity": 1.2527933602477987,
+      "r2_global": 0.9333911051753505,
+      "counterfactual": false
+    },
+    "test|translate_up": {
+      "pairs": 112,
+      "pixels": 2100,
+      "mse": 0.01204935033803062,
+      "identity_mse": 0.03376427968155663,
+      "mse_over_identity": 0.35686679685373074,
+      "r2_global": 0.9879447024232648,
+      "counterfactual": false
+    },
+    "val_ood|translate_up -> rot90": {
+      "pairs": 128,
+      "pixels": 2287,
+      "mse": 0.0629700584304674,
+      "identity_mse": 0.07588110447303852,
+      "mse_over_identity": 0.8298516326003323,
+      "r2_global": 0.9369897770683658,
+      "counterfactual": false
+    },
+    "val_ood|rot90 -> translate_up": {
+      "pairs": 128,
+      "pixels": 2335,
+      "mse": 0.0626181544689904,
+      "identity_mse": 0.07496989492451848,
+      "mse_over_identity": 0.8352439940330166,
+      "r2_global": 0.9373507230276378,
+      "counterfactual": true
+    },
+    "test_ood|translate_up -> rot90": {
+      "pairs": 128,
+      "pixels": 2165,
+      "mse": 0.07985443165010735,
+      "identity_mse": 0.09299881068917476,
+      "mse_over_identity": 0.8586607834911006,
+      "r2_global": 0.9201152997692876,
+      "counterfactual": false
+    },
+    "test_ood|rot90 -> translate_up": {
+      "pairs": 128,
+      "pixels": 2182,
+      "mse": 0.07968148025030826,
+      "identity_mse": 0.09239267030144432,
+      "mse_over_identity": 0.8624220946351698,
+      "r2_global": 0.9202977604187691,
+      "counterfactual": true
+    },
+    "operator_diagnostics": {
+      "dimension_homogeneous": 129,
+      "relative_commutator_frobenius": 0.23980584683682615,
+      "ridge": 1.0,
+      "chart": "image token features; joint ViT uses fixed rot90 function context"
+    }
+  },
+  "probe_train_pairs_per_atomic": 256,
+  "probe_eval_pairs_per_suite": 128
+}

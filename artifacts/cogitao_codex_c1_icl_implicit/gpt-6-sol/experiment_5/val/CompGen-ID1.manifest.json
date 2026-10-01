@@ -1,0 +1,382 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 5,
+  "split": "val",
+  "condition": "CompGen-ID1",
+  "target_suite": [
+    "extend_contours_same_color",
+    "pad_left"
+  ],
+  "target_indices": [
+    783,
+    800,
+    814,
+    816,
+    829,
+    835,
+    846,
+    849,
+    856,
+    881
+  ],
+  "context": {
+    "783": [
+      {
+        "source_index": 18095,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 4995,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 44948,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 40874,
+        "suite": [
+          "extend_contours_same_color",
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 85556,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      }
+    ],
+    "800": [
+      {
+        "source_index": 89,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 14449,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 71912,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 43364,
+        "suite": [
+          "extend_contours_same_color",
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 97010,
+        "suite": [
+          "extend_contours_same_color",
+          "mirror_vertical"
+        ]
+      }
+    ],
+    "814": [
+      {
+        "source_index": 14458,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 2606,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 95258,
+        "suite": [
+          "extend_contours_same_color",
+          "mirror_vertical"
+        ]
+      },
+      {
+        "source_index": 40435,
+        "suite": [
+          "extend_contours_same_color",
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 47640,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      }
+    ],
+    "816": [
+      {
+        "source_index": 12379,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 3359,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 81673,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 43135,
+        "suite": [
+          "extend_contours_same_color",
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 75751,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      }
+    ],
+    "829": [
+      {
+        "source_index": 21242,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 8175,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 71416,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 48158,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 81188,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      }
+    ],
+    "835": [
+      {
+        "source_index": 4093,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 19244,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 54071,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 73676,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 98153,
+        "suite": [
+          "extend_contours_same_color",
+          "mirror_vertical"
+        ]
+      }
+    ],
+    "846": [
+      {
+        "source_index": 5295,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 11974,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 52377,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 86865,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 88891,
+        "suite": [
+          "extend_contours_same_color",
+          "mirror_vertical"
+        ]
+      }
+    ],
+    "849": [
+      {
+        "source_index": 12083,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 3822,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 51064,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 69136,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 86623,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      }
+    ],
+    "856": [
+      {
+        "source_index": 21805,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 7690,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 75699,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 88611,
+        "suite": [
+          "extend_contours_same_color",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 39956,
+        "suite": [
+          "extend_contours_same_color",
+          "extend_contours_same_color"
+        ]
+      }
+    ],
+    "881": [
+      {
+        "source_index": 3308,
+        "suite": [
+          "extend_contours_same_color"
+        ]
+      },
+      {
+        "source_index": 19105,
+        "suite": [
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 98139,
+        "suite": [
+          "extend_contours_same_color",
+          "mirror_vertical"
+        ]
+      },
+      {
+        "source_index": 73179,
+        "suite": [
+          "mirror_vertical",
+          "pad_left"
+        ]
+      },
+      {
+        "source_index": 50009,
+        "suite": [
+          "pad_left",
+          "pad_left"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "166750c8a0cb8746986ed46cd743d56942fb6bd124dcb998d9e92a51b8f5031f",
+  "embedding": "implicit",
+  "task_code_map": {
+    "extend_contours_same_color": "t1",
+    "mirror_vertical": "t2",
+    "pad_left": "t3"
+  }
+}

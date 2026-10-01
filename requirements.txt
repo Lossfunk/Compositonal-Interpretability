@@ -1,0 +1,12 @@
+torch==2.13.0
+torchvision==0.28.0
+lightning==2.6.5
+wandb==0.28.2
+numpy==2.5.1
+scipy==1.18.0
+pyarrow==25.0.1
+matplotlib==3.11.0
+huggingface-hub==1.23.0
+PyYAML==6.0.3
+Pillow==12.3.0
+pytest==9.1.1

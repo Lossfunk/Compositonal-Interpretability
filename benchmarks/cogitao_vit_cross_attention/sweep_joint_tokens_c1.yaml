@@ -1,0 +1,16 @@
+name: cogitao-c1-joint-token-vit-five-experiments
+description: Train the joint image/function-token ViT on all five C1 experiments.
+method: grid
+metric:
+  name: val/ood/grid_accuracy
+  goal: maximize
+program: benchmarks.cogitao_vit_cross_attention.run_joint_tokens
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - ${program}
+  - ${args}
+parameters:
+  experiment:
+    values: [1, 2, 3, 4, 5]

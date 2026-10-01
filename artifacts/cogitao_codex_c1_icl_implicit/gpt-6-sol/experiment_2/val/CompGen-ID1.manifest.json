@@ -1,0 +1,382 @@
+{
+  "protocol_version": 1,
+  "model": "gpt-6-sol",
+  "experiment": 2,
+  "split": "val",
+  "condition": "CompGen-ID1",
+  "target_suite": [
+    "change_shape_color",
+    "pad_right"
+  ],
+  "target_indices": [
+    914,
+    919,
+    931,
+    936,
+    947,
+    950,
+    955,
+    973,
+    992,
+    997
+  ],
+  "context": {
+    "914": [
+      {
+        "source_index": 24034,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 6756,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 38594,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 71349,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 97393,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      }
+    ],
+    "919": [
+      {
+        "source_index": 29691,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 7382,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 88775,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 78898,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 32055,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      }
+    ],
+    "931": [
+      {
+        "source_index": 473,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 26643,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 37570,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 85299,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 54274,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "936": [
+      {
+        "source_index": 24606,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 2667,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 30526,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 68936,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 90111,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      }
+    ],
+    "947": [
+      {
+        "source_index": 7488,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 25851,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 91458,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 36518,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 55697,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "950": [
+      {
+        "source_index": 26420,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 9513,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 50547,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 37269,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 70307,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "955": [
+      {
+        "source_index": 26154,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 5247,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 77822,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 81599,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 92388,
+        "suite": [
+          "change_shape_color",
+          "pad_right"
+        ]
+      }
+    ],
+    "973": [
+      {
+        "source_index": 22909,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 2280,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 59869,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 31983,
+        "suite": [
+          "pad_right",
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 62386,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      }
+    ],
+    "992": [
+      {
+        "source_index": 24187,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 5631,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 66761,
+        "suite": [
+          "pad_right",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 53698,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 75847,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      }
+    ],
+    "997": [
+      {
+        "source_index": 9169,
+        "suite": [
+          "pad_right"
+        ]
+      },
+      {
+        "source_index": 28701,
+        "suite": [
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 56567,
+        "suite": [
+          "change_shape_color",
+          "change_shape_color"
+        ]
+      },
+      {
+        "source_index": 81579,
+        "suite": [
+          "change_shape_color",
+          "fill_holes_different_color"
+        ]
+      },
+      {
+        "source_index": 78480,
+        "suite": [
+          "fill_holes_different_color",
+          "change_shape_color"
+        ]
+      }
+    ]
+  },
+  "base_prompt_sha256": "166750c8a0cb8746986ed46cd743d56942fb6bd124dcb998d9e92a51b8f5031f",
+  "embedding": "implicit",
+  "task_code_map": {
+    "change_shape_color": "t1",
+    "fill_holes_different_color": "t2",
+    "pad_right": "t3"
+  }
+}

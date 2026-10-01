@@ -1,0 +1,24 @@
+name: cogitao-compgen-c1-slot-attention-all-experiments
+description: Run Slot Attention on all five COGITAO CompGen Setting 1 experiments.
+
+# This is an exhaustive job matrix, not a hyperparameter search. W&B assigns
+# each (setting, experiment) configuration once across every attached agent.
+method: grid
+metric:
+  name: val/ood/grid_accuracy
+  goal: maximize
+
+# Run the launcher as a module so imports resolve from the repository root.
+program: benchmarks.cogitao_slot_attention.run
+command:
+  - ${env}
+  - ${interpreter}
+  - -m
+  - ${program}
+  - ${args}
+
+parameters:
+  setting:
+    value: 1
+  experiment:
+    values: [1, 2, 3, 4, 5]
