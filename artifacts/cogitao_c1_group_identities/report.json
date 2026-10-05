@@ -1,0 +1,2411 @@
+{
+  "checkpoint": "checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/last.ckpt",
+  "global_step": 78000,
+  "mode": "all",
+  "probe_file": "artifacts/cogitao_c1_group_identities/frozen_probes.npz",
+  "fit": {
+    "protocol_version": 3,
+    "checkpoint_sha256": "c6578b6a655d823b9e27296aaf186e6b5b97bad640fb400cc5f2abaa6f308e6d",
+    "symmetry": "whole_grid_clockwise_90",
+    "source_task": "translate_up",
+    "transported_task": "translate_right",
+    "fit_split": "train",
+    "seed": 42,
+    "resolution": [
+      20,
+      20
+    ],
+    "fit_up_pairs": 256,
+    "fit_native_pairs": 256,
+    "fit_native_right_pairs": 0,
+    "direction_readout_available": false,
+    "layers": [
+      "image_input_tokens",
+      "image_block_01",
+      "image_block_02",
+      "image_block_03",
+      "image_block_04",
+      "image_block_05",
+      "image_block_06",
+      "function_mlp_01",
+      "function_mlp_02",
+      "function_mlp_03",
+      "shared_cross_attention",
+      "output_cross_attention",
+      "image_final_norm"
+    ],
+    "ranks": {
+      "image_input_tokens": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_01": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_02": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_03": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_04": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_05": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_block_06": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "function_mlp_01": {
+        "source_rank": 1,
+        "dimension": 512,
+        "underidentified": true
+      },
+      "function_mlp_02": {
+        "source_rank": 1,
+        "dimension": 512,
+        "underidentified": true
+      },
+      "function_mlp_03": {
+        "source_rank": 1,
+        "dimension": 128,
+        "underidentified": true
+      },
+      "shared_cross_attention": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "output_cross_attention": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      },
+      "image_final_norm": {
+        "source_rank": 128,
+        "dimension": 128,
+        "underidentified": false
+      }
+    },
+    "coverage": {
+      "total_rows": 100000,
+      "translate_up|available": 11112,
+      "translate_up|selected": 256,
+      "translate_right|available": 0,
+      "translate_right|selected": 0
+    },
+    "spatial_image_layers": [
+      "image_input_tokens",
+      "image_block_01",
+      "image_block_02",
+      "image_block_03",
+      "image_block_04",
+      "image_block_05",
+      "image_block_06",
+      "image_final_norm"
+    ],
+    "spatial_image_ranks": {
+      "image_input_tokens": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_01": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_02": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_03": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_04": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_05": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_06": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_final_norm": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      }
+    },
+    "spatial_mirror_ranks": {
+      "image_input_tokens": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_01": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_02": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_03": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_04": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_05": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_block_06": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      },
+      "image_final_norm": {
+        "source_gram_rank": 128,
+        "dimension": 128,
+        "underidentified": false,
+        "matched_training_tokens": 102400
+      }
+    },
+    "ridge": 0.01,
+    "convention": "row vector: H_transported ~= H_source @ Q"
+  },
+  "evaluation": {
+    "val": {
+      "coverage": {
+        "total_rows": 1000,
+        "translate_up|available": 112,
+        "translate_up|selected": 112,
+        "translate_right|available": 0,
+        "translate_right|selected": 0
+      },
+      "layers": {
+        "image_input_tokens": {
+          "equivariance_defect": {
+            "mean": 0.15989199619926348,
+            "median": 0.16087960173980642,
+            "p90": 0.21144540171207196,
+            "standard_error": 0.004062923500829289
+          },
+          "identity_defect": {
+            "mean": 0.38974592853836004,
+            "median": 0.3813417798569487,
+            "p90": 0.532859292697387,
+            "standard_error": 0.009835939256660368
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0065207607210154e-14,
+          "c4_operator_closure_error": 1.2079394606529734,
+          "c4_data_closure_defect": {
+            "mean": 0.1076388191241096,
+            "median": 0.09774042700926863,
+            "p90": 0.1572664785653253,
+            "standard_error": 0.003559101663325913
+          }
+        },
+        "image_block_01": {
+          "equivariance_defect": {
+            "mean": 0.29027177820429895,
+            "median": 0.2694629102041701,
+            "p90": 0.404642890471725,
+            "standard_error": 0.008187418881996197
+          },
+          "identity_defect": {
+            "mean": 0.5716502651662335,
+            "median": 0.5446744815985487,
+            "p90": 0.8065975947195589,
+            "standard_error": 0.01606535960700342
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8003839976480062e-14,
+          "c4_operator_closure_error": 1.2609777058002338,
+          "c4_data_closure_defect": {
+            "mean": 0.18430278815531342,
+            "median": 0.17537199422210215,
+            "p90": 0.2311190229336372,
+            "standard_error": 0.004688185732014142
+          }
+        },
+        "image_block_02": {
+          "equivariance_defect": {
+            "mean": 0.3019005591874918,
+            "median": 0.2836995590542267,
+            "p90": 0.40707322153348124,
+            "standard_error": 0.008287878115567037
+          },
+          "identity_defect": {
+            "mean": 0.6030240130112079,
+            "median": 0.577531570393742,
+            "p90": 0.8284584317450764,
+            "standard_error": 0.015806157689973968
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8874492525693966e-14,
+          "c4_operator_closure_error": 1.2581113494014942,
+          "c4_data_closure_defect": {
+            "mean": 0.20211884937846822,
+            "median": 0.19214413577809084,
+            "p90": 0.25246233360440673,
+            "standard_error": 0.0043800356120886
+          }
+        },
+        "image_block_03": {
+          "equivariance_defect": {
+            "mean": 0.35686978073816933,
+            "median": 0.3243911282247791,
+            "p90": 0.486433337742412,
+            "standard_error": 0.009374731671863576
+          },
+          "identity_defect": {
+            "mean": 0.6475230291621058,
+            "median": 0.6190374282315245,
+            "p90": 0.8699725586177594,
+            "standard_error": 0.015462480386095257
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0682616505731334e-14,
+          "c4_operator_closure_error": 1.263013747202279,
+          "c4_data_closure_defect": {
+            "mean": 0.2755727946981562,
+            "median": 0.26753782004233395,
+            "p90": 0.33583239483740435,
+            "standard_error": 0.005388096574500829
+          }
+        },
+        "image_block_04": {
+          "equivariance_defect": {
+            "mean": 0.36105824408897375,
+            "median": 0.35929546759671105,
+            "p90": 0.46035018563938257,
+            "standard_error": 0.007519340592960433
+          },
+          "identity_defect": {
+            "mean": 0.6573890467568232,
+            "median": 0.648455260577464,
+            "p90": 0.8394921169816252,
+            "standard_error": 0.01416240593577591
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.936140882335687e-14,
+          "c4_operator_closure_error": 1.2822439615553025,
+          "c4_data_closure_defect": {
+            "mean": 0.29295271176661075,
+            "median": 0.28271367147354093,
+            "p90": 0.36799794956928755,
+            "standard_error": 0.0055288059101110225
+          }
+        },
+        "image_block_05": {
+          "equivariance_defect": {
+            "mean": 0.4600022550234931,
+            "median": 0.44831339769509687,
+            "p90": 0.5884484772640926,
+            "standard_error": 0.008670745567627543
+          },
+          "identity_defect": {
+            "mean": 0.7426230184913732,
+            "median": 0.7511607489117198,
+            "p90": 0.9413554243595271,
+            "standard_error": 0.014620334596046117
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0580335978426425e-14,
+          "c4_operator_closure_error": 1.3000008155433913,
+          "c4_data_closure_defect": {
+            "mean": 0.41930982064619443,
+            "median": 0.4097308081778518,
+            "p90": 0.521520933753952,
+            "standard_error": 0.006821811651078464
+          }
+        },
+        "image_block_06": {
+          "equivariance_defect": {
+            "mean": 0.4962069260495764,
+            "median": 0.48511472093184055,
+            "p90": 0.6378907093866555,
+            "standard_error": 0.009881914545801123
+          },
+          "identity_defect": {
+            "mean": 0.7459209453406344,
+            "median": 0.7472987036830149,
+            "p90": 0.9791676248447365,
+            "standard_error": 0.015821881973881517
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.189970256980711e-14,
+          "c4_operator_closure_error": 1.2864659379638088,
+          "c4_data_closure_defect": {
+            "mean": 0.47037220806316027,
+            "median": 0.4579344630923201,
+            "p90": 0.6021669325404687,
+            "standard_error": 0.009161265918918407
+          }
+        },
+        "function_mlp_01": {
+          "equivariance_defect": {
+            "mean": 0.7488877891793339,
+            "median": 0.7488877891793339,
+            "p90": 0.7488877891793339,
+            "standard_error": 0.0
+          },
+          "identity_defect": {
+            "mean": 0.9460911851111627,
+            "median": 0.9460911851111624,
+            "p90": 0.9460911851111624,
+            "standard_error": 3.161331182674473e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 512,
+            "underidentified": true
+          },
+          "orthogonality_error": 4.265477519289102e-14,
+          "c4_operator_closure_error": 1.4094033702258528,
+          "c4_data_closure_defect": {
+            "mean": 1.4573618511498254,
+            "median": 1.4573618511498252,
+            "p90": 1.4573618511498252,
+            "standard_error": 2.1075541217829815e-17
+          }
+        },
+        "function_mlp_02": {
+          "equivariance_defect": {
+            "mean": 0.47087487066016104,
+            "median": 0.470874870660161,
+            "p90": 0.470874870660161,
+            "standard_error": 5.268885304457454e-18
+          },
+          "identity_defect": {
+            "mean": 1.786254661097659,
+            "median": 1.7862546610976597,
+            "p90": 1.7862546610976597,
+            "standard_error": 6.322662365348946e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 512,
+            "underidentified": true
+          },
+          "orthogonality_error": 4.555069981704628e-14,
+          "c4_operator_closure_error": 1.4151124997610571,
+          "c4_data_closure_defect": {
+            "mean": 1.424129076612662,
+            "median": 1.4241290766126624,
+            "p90": 1.4241290766126624,
+            "standard_error": 4.215108243565963e-17
+          }
+        },
+        "function_mlp_03": {
+          "equivariance_defect": {
+            "mean": 0.4799375366649716,
+            "median": 0.4799375366649714,
+            "p90": 0.4799375366649714,
+            "standard_error": 1.5806655913372365e-17
+          },
+          "identity_defect": {
+            "mean": 0.7582172951553156,
+            "median": 0.7582172951553158,
+            "p90": 0.7582172951553158,
+            "standard_error": 2.1075541217829815e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 128,
+            "underidentified": true
+          },
+          "orthogonality_error": 1.5762597107766045e-14,
+          "c4_operator_closure_error": 1.385122978075914,
+          "c4_data_closure_defect": {
+            "mean": 1.3312056264208114,
+            "median": 1.3312056264208119,
+            "p90": 1.3312056264208119,
+            "standard_error": 4.215108243565963e-17
+          }
+        },
+        "shared_cross_attention": {
+          "equivariance_defect": {
+            "mean": 0.3632072964566416,
+            "median": 0.3623994647916122,
+            "p90": 0.4191842415485726,
+            "standard_error": 0.0038636426169570805
+          },
+          "identity_defect": {
+            "mean": 0.7630445901627981,
+            "median": 0.7479735038470088,
+            "p90": 0.97832365259719,
+            "standard_error": 0.014333001551991046
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8821138023236265e-14,
+          "c4_operator_closure_error": 1.3261188512992015,
+          "c4_data_closure_defect": {
+            "mean": 1.1173791576303236,
+            "median": 1.1221691818603143,
+            "p90": 1.1520921249792466,
+            "standard_error": 0.003022138010452217
+          }
+        },
+        "output_cross_attention": {
+          "equivariance_defect": {
+            "mean": 0.2786448479784535,
+            "median": 0.2245497437937556,
+            "p90": 0.5477189012670018,
+            "standard_error": 0.016264500375182112
+          },
+          "identity_defect": {
+            "mean": 0.30700756040554616,
+            "median": 0.25938562956251543,
+            "p90": 0.5358796385392898,
+            "standard_error": 0.015457592119592113
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.923212443548363e-14,
+          "c4_operator_closure_error": 1.3266880999864945,
+          "c4_data_closure_defect": {
+            "mean": 0.21584666924718476,
+            "median": 0.21694917606900205,
+            "p90": 0.2540775761051762,
+            "standard_error": 0.003066393355570299
+          }
+        },
+        "image_final_norm": {
+          "equivariance_defect": {
+            "mean": 0.4785231593768282,
+            "median": 0.47528158978873125,
+            "p90": 0.6196094736792934,
+            "standard_error": 0.009739267388104494
+          },
+          "identity_defect": {
+            "mean": 0.7215908920072558,
+            "median": 0.7191268525966443,
+            "p90": 0.9331053714051261,
+            "standard_error": 0.015836185801513924
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.938467909562126e-14,
+          "c4_operator_closure_error": 1.2742816870730471,
+          "c4_data_closure_defect": {
+            "mean": 0.4452388408706685,
+            "median": 0.42694844390055187,
+            "p90": 0.5677255961998959,
+            "standard_error": 0.008733455828834417
+          }
+        }
+      },
+      "spatial_image_layers": {
+        "image_input_tokens": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.385479464740477,
+            "median": 0.3858447041157326,
+            "p90": 0.4060903418832649,
+            "standard_error": 0.0015115694517101215
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7588246056306589,
+            "median": 0.7584344938431098,
+            "p90": 0.852358279049115,
+            "standard_error": 0.007056918396741941
+          },
+          "identity_channel_defect": {
+            "mean": 0.6076856071129334,
+            "median": 0.6077307841680466,
+            "p90": 0.6219693007567344,
+            "standard_error": 0.0010467359510302992
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.32876934554054543,
+            "median": 0.32779356472271387,
+            "p90": 0.41023764945369073,
+            "standard_error": 0.006252550028554641
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.154309952527993,
+          "c4_data_closure_defect": {
+            "mean": 0.1816508939142559,
+            "median": 0.1813434490879411,
+            "p90": 0.18396409699622904,
+            "standard_error": 0.0001401486068255655
+          }
+        },
+        "image_block_01": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.685835685530311,
+            "median": 0.6808948035854158,
+            "p90": 0.7475211896756888,
+            "standard_error": 0.005027256771124542
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7812344271849847,
+            "median": 0.7823447641642836,
+            "p90": 0.9044369189685457,
+            "standard_error": 0.009752287272785648
+          },
+          "identity_channel_defect": {
+            "mean": 0.9013180436744695,
+            "median": 0.8930521490269736,
+            "p90": 0.9925029674504051,
+            "standard_error": 0.006230066458902367
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6399969543622781,
+            "median": 0.6493641878049689,
+            "p90": 0.7613374406488516,
+            "standard_error": 0.009800905122713801
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0910145826996502,
+          "c4_data_closure_defect": {
+            "mean": 0.17621995635324403,
+            "median": 0.1699680375677194,
+            "p90": 0.21519119773617182,
+            "standard_error": 0.0024414749472931475
+          }
+        },
+        "image_block_02": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6475675966390548,
+            "median": 0.6427900590498987,
+            "p90": 0.7394343828573662,
+            "standard_error": 0.006604572348164643
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7813697691022935,
+            "median": 0.7755707908385097,
+            "p90": 0.9027583152615025,
+            "standard_error": 0.008892550845460206
+          },
+          "identity_channel_defect": {
+            "mean": 0.8645338897452601,
+            "median": 0.8594416258378665,
+            "p90": 0.9890766481219782,
+            "standard_error": 0.00817878487479564
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.7115592111807009,
+            "median": 0.7158679233192473,
+            "p90": 0.8509508561106828,
+            "standard_error": 0.011054483937177735
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0979216381370651,
+          "c4_data_closure_defect": {
+            "mean": 0.26757531210202545,
+            "median": 0.2677299131497485,
+            "p90": 0.3081576491193306,
+            "standard_error": 0.003027747103497351
+          }
+        },
+        "image_block_03": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6105448658545761,
+            "median": 0.6098380865817847,
+            "p90": 0.6707659533245459,
+            "standard_error": 0.0044671232895967744
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8394567689995384,
+            "median": 0.8320135013372445,
+            "p90": 0.9486868042394021,
+            "standard_error": 0.008192211946726076
+          },
+          "identity_channel_defect": {
+            "mean": 0.8065426269198709,
+            "median": 0.8021575359507807,
+            "p90": 0.8832337872731277,
+            "standard_error": 0.005635271530816155
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.653066776795691,
+            "median": 0.6597532323558071,
+            "p90": 0.7688856633110732,
+            "standard_error": 0.009019968413049216
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0918746112377988,
+          "c4_data_closure_defect": {
+            "mean": 0.26820012828845,
+            "median": 0.26551723145028694,
+            "p90": 0.2952018620141302,
+            "standard_error": 0.00242041676346549
+          }
+        },
+        "image_block_04": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6801223767603002,
+            "median": 0.6774317077326051,
+            "p90": 0.7420476265652087,
+            "standard_error": 0.0045493152889713884
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8698307177767338,
+            "median": 0.8705950852889902,
+            "p90": 0.9589159949790319,
+            "standard_error": 0.00717007958489832
+          },
+          "identity_channel_defect": {
+            "mean": 0.8906274064818064,
+            "median": 0.8892300710049033,
+            "p90": 0.9729921195995751,
+            "standard_error": 0.0059243566215328985
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6814629613440675,
+            "median": 0.6892985164457249,
+            "p90": 0.8108307570133907,
+            "standard_error": 0.009739474739068273
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0884002892153706,
+          "c4_data_closure_defect": {
+            "mean": 0.3241024126142663,
+            "median": 0.3197154923508278,
+            "p90": 0.3652601139386644,
+            "standard_error": 0.0028600507574361275
+          }
+        },
+        "image_block_05": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.749491307485303,
+            "median": 0.744329458852299,
+            "p90": 0.8082963044649665,
+            "standard_error": 0.004704451746158076
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.961734456221808,
+            "median": 0.964582387466977,
+            "p90": 1.0408399099111474,
+            "standard_error": 0.005867556710266999
+          },
+          "identity_channel_defect": {
+            "mean": 0.9547780045451199,
+            "median": 0.9535441627050374,
+            "p90": 1.0384031173279196,
+            "standard_error": 0.006669364361271066
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.7921712817047922,
+            "median": 0.7899496345549851,
+            "p90": 0.918381622923322,
+            "standard_error": 0.010294721907397077
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1340775702728625,
+          "c4_data_closure_defect": {
+            "mean": 0.4305228329653419,
+            "median": 0.43022035601069486,
+            "p90": 0.48002541096718615,
+            "standard_error": 0.0036726280181083957
+          }
+        },
+        "image_block_06": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.7732687515927693,
+            "median": 0.771692536018113,
+            "p90": 0.8461080622239202,
+            "standard_error": 0.005447514982639539
+          },
+          "foreground_equivariance_defect": {
+            "mean": 1.0268946543757242,
+            "median": 1.0244984511291038,
+            "p90": 1.1045227193803684,
+            "standard_error": 0.005570886196002776
+          },
+          "identity_channel_defect": {
+            "mean": 0.9613458354298692,
+            "median": 0.9526061258573155,
+            "p90": 1.069559455652156,
+            "standard_error": 0.008135792818391099
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.8122706902722253,
+            "median": 0.8225989663399639,
+            "p90": 0.948175882351486,
+            "standard_error": 0.010923579309013174
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1300538764533747,
+          "c4_data_closure_defect": {
+            "mean": 0.46134106590795465,
+            "median": 0.45753485881863787,
+            "p90": 0.5099829948097355,
+            "standard_error": 0.003541068962179725
+          }
+        },
+        "image_final_norm": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.7589250273937206,
+            "median": 0.7540752318751951,
+            "p90": 0.8168941117625973,
+            "standard_error": 0.0042055296905686
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9910820580211734,
+            "median": 0.9969516910163598,
+            "p90": 1.0611074377722314,
+            "standard_error": 0.005297162434575879
+          },
+          "identity_channel_defect": {
+            "mean": 0.9460848892204959,
+            "median": 0.9433108991399006,
+            "p90": 1.032915642538529,
+            "standard_error": 0.006501045798396015
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.8229200584149875,
+            "median": 0.8301394171044028,
+            "p90": 0.9499743561377187,
+            "standard_error": 0.009768096865595806
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1183012138810997,
+          "c4_data_closure_defect": {
+            "mean": 0.465180925880075,
+            "median": 0.4577294318709632,
+            "p90": 0.5196510004014465,
+            "standard_error": 0.003719504804884451
+          }
+        }
+      },
+      "spatial_mirror_layers": {
+        "image_input_tokens": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.35662540793772685,
+            "median": 0.3552082660415148,
+            "p90": 0.3772088987543508,
+            "standard_error": 0.0016427514530074135
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7402333719287129,
+            "median": 0.746572296335593,
+            "p90": 0.8346203217181969,
+            "standard_error": 0.0072374239387087355
+          },
+          "identity_channel_defect": {
+            "mean": 0.5062439607568212,
+            "median": 0.505530656945248,
+            "p90": 0.5212143432230922,
+            "standard_error": 0.0012156885356855325
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.315767082665138,
+            "median": 0.3175186992674245,
+            "p90": 0.3938900545573607,
+            "standard_error": 0.006308528027330822
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.015391734112577082,
+          "m2_data_closure_defect": {
+            "mean": 0.006890899522448689,
+            "median": 0.006769664776869416,
+            "p90": 0.008119786370422318,
+            "standard_error": 8.973614227666934e-05
+          }
+        },
+        "image_block_01": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.48342189514620293,
+            "median": 0.4845651635897077,
+            "p90": 0.5224770365483459,
+            "standard_error": 0.002864346753837283
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.6894883652822072,
+            "median": 0.6886777377264881,
+            "p90": 0.8184705256940463,
+            "standard_error": 0.0090837268859263
+          },
+          "identity_channel_defect": {
+            "mean": 0.6087066605110547,
+            "median": 0.6030471378499782,
+            "p90": 0.6799559130009232,
+            "standard_error": 0.004546402285379852
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.49374115877384334,
+            "median": 0.5052771562321988,
+            "p90": 0.5905250021383737,
+            "standard_error": 0.008665242158162521
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.47239483067386584,
+          "m2_data_closure_defect": {
+            "mean": 0.04532546746797868,
+            "median": 0.044906053473498506,
+            "p90": 0.05314641373132685,
+            "standard_error": 0.0004702470653435549
+          }
+        },
+        "image_block_02": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.4870996680302707,
+            "median": 0.4851795577684045,
+            "p90": 0.5568906098002923,
+            "standard_error": 0.00469129238435915
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7091577760365991,
+            "median": 0.7163929617268224,
+            "p90": 0.80123590032496,
+            "standard_error": 0.0071953315184051115
+          },
+          "identity_channel_defect": {
+            "mean": 0.6254843298623552,
+            "median": 0.61561494682502,
+            "p90": 0.7276839284584226,
+            "standard_error": 0.007300661810636475
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5541054772686199,
+            "median": 0.5587698581398551,
+            "p90": 0.7099415152769027,
+            "standard_error": 0.010948981756962005
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.5731178569089888,
+          "m2_data_closure_defect": {
+            "mean": 0.07476683353784097,
+            "median": 0.0720842776802813,
+            "p90": 0.08648991944655626,
+            "standard_error": 0.001046515124871236
+          }
+        },
+        "image_block_03": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.45795411578738815,
+            "median": 0.4553860351858121,
+            "p90": 0.5003936841815623,
+            "standard_error": 0.0030603829326232798
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7792433676264147,
+            "median": 0.7874802267382646,
+            "p90": 0.8738914438809218,
+            "standard_error": 0.007257656681966154
+          },
+          "identity_channel_defect": {
+            "mean": 0.5811425525084128,
+            "median": 0.5828369559189055,
+            "p90": 0.65395678396507,
+            "standard_error": 0.005350577185767284
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5217856299511643,
+            "median": 0.5217574557129828,
+            "p90": 0.6374916957820969,
+            "standard_error": 0.008863963741118601
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.6211468270641586,
+          "m2_data_closure_defect": {
+            "mean": 0.09053592411247369,
+            "median": 0.08923141076229515,
+            "p90": 0.1048094407429571,
+            "standard_error": 0.001100721290339683
+          }
+        },
+        "image_block_04": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.4884490749347968,
+            "median": 0.4880832785981156,
+            "p90": 0.5264143980778344,
+            "standard_error": 0.003096937417435866
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7971138631842073,
+            "median": 0.7987006876589131,
+            "p90": 0.8837815377728699,
+            "standard_error": 0.006252135137957837
+          },
+          "identity_channel_defect": {
+            "mean": 0.5954698487943982,
+            "median": 0.5897885106848095,
+            "p90": 0.6688422988315452,
+            "standard_error": 0.005121788922548483
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.526101275727982,
+            "median": 0.5292552727680648,
+            "p90": 0.6433640319565495,
+            "standard_error": 0.00888170685948629
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.6702083623781522,
+          "m2_data_closure_defect": {
+            "mean": 0.11602119332045946,
+            "median": 0.11399220585274358,
+            "p90": 0.135280711409353,
+            "standard_error": 0.0013510921807266593
+          }
+        },
+        "image_block_05": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.5936661003933678,
+            "median": 0.5811925062136278,
+            "p90": 0.6869515727214559,
+            "standard_error": 0.005961295799762969
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8787924782580223,
+            "median": 0.8762709426784119,
+            "p90": 0.9636805668681632,
+            "standard_error": 0.006215536326710244
+          },
+          "identity_channel_defect": {
+            "mean": 0.6737715560773087,
+            "median": 0.6553008624624734,
+            "p90": 0.7830164657835728,
+            "standard_error": 0.007752257651492779
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6192698097083754,
+            "median": 0.601218347736615,
+            "p90": 0.8050388486998531,
+            "standard_error": 0.010711208648961768
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7406126984867862,
+          "m2_data_closure_defect": {
+            "mean": 0.214429750945115,
+            "median": 0.21089612774563213,
+            "p90": 0.25359493691260887,
+            "standard_error": 0.0025569430163226085
+          }
+        },
+        "image_block_06": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6170852829372132,
+            "median": 0.6116029651584878,
+            "p90": 0.7212669451946616,
+            "standard_error": 0.006828191892516893
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9524837497813902,
+            "median": 0.949223757445768,
+            "p90": 1.0530054095024362,
+            "standard_error": 0.007139723414057861
+          },
+          "identity_channel_defect": {
+            "mean": 0.6828351657551733,
+            "median": 0.6573150922158284,
+            "p90": 0.8050467858489422,
+            "standard_error": 0.008800751809105958
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6374516305161103,
+            "median": 0.6013659096297235,
+            "p90": 0.8171964057765569,
+            "standard_error": 0.011539028054545786
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7643715064213972,
+          "m2_data_closure_defect": {
+            "mean": 0.23133544499330247,
+            "median": 0.2259616015332858,
+            "p90": 0.27249607763000805,
+            "standard_error": 0.002810526095246569
+          }
+        },
+        "image_final_norm": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6184236632313567,
+            "median": 0.6097471696412096,
+            "p90": 0.7166929486894024,
+            "standard_error": 0.006864593651713925
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9137593924864055,
+            "median": 0.9070471397645415,
+            "p90": 1.017989214242256,
+            "standard_error": 0.006951983890446876
+          },
+          "identity_channel_defect": {
+            "mean": 0.6881150360201322,
+            "median": 0.6691204144979792,
+            "p90": 0.8300783059257894,
+            "standard_error": 0.008974336121533033
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6593047712147106,
+            "median": 0.6293342708328564,
+            "p90": 0.8384416271429851,
+            "standard_error": 0.011286827621304174
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7415026131199777,
+          "m2_data_closure_defect": {
+            "mean": 0.22651769015718237,
+            "median": 0.22079570811455776,
+            "p90": 0.2648342446603546,
+            "standard_error": 0.002664930441915607
+          }
+        }
+      },
+      "input_rotation_resize_mismatch": {
+        "mean": 0.043102678571428577,
+        "median": 0.0425,
+        "p90": 0.06,
+        "standard_error": 0.001459394333557433
+      },
+      "input_reflection_resize_mismatch": {
+        "mean": 0.04357142857142857,
+        "median": 0.0425,
+        "p90": 0.06725000000000002,
+        "standard_error": 0.0015409841937367725
+      },
+      "original_up_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.9196428571428571,
+        "pixel_accuracy": 0.9994642857142857,
+        "object_pixel_accuracy": 0.9932055872746977
+      },
+      "transported_right_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.0,
+        "pixel_accuracy": 0.9099553571428571,
+        "object_pixel_accuracy": 0.1571026297906466
+      },
+      "native_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.9196428571428571,
+        "pixel_accuracy": 0.9994642857142857,
+        "object_pixel_accuracy": 0.9932055872746977
+      },
+      "unchanged_task_control": {
+        "eligible_samples": 90,
+        "distinct_up_right_targets": 90,
+        "right_prediction_matching_wrong_up": {
+          "samples": 90,
+          "exact_grid_accuracy": 0.0,
+          "pixel_accuracy": 0.9244444444444444,
+          "object_pixel_accuracy": 0.264539801959335
+        },
+        "model_with_up_on_rotated_input": {
+          "samples": 90,
+          "exact_grid_accuracy": 0.8888888888888888,
+          "pixel_accuracy": 0.9993888888888889,
+          "object_pixel_accuracy": 0.9879083985327652
+        },
+        "model_with_up_matching_right_target": {
+          "samples": 90,
+          "exact_grid_accuracy": 0.0,
+          "pixel_accuracy": 0.8987222222222222,
+          "object_pixel_accuracy": 0.11596859747032859
+        }
+      }
+    },
+    "test": {
+      "coverage": {
+        "total_rows": 1000,
+        "translate_up|available": 112,
+        "translate_up|selected": 112,
+        "translate_right|available": 0,
+        "translate_right|selected": 0
+      },
+      "layers": {
+        "image_input_tokens": {
+          "equivariance_defect": {
+            "mean": 0.16694413903983016,
+            "median": 0.15696584985479337,
+            "p90": 0.2401489897976163,
+            "standard_error": 0.004764562190860771
+          },
+          "identity_defect": {
+            "mean": 0.3826606664589267,
+            "median": 0.3682311748585,
+            "p90": 0.5341845176377917,
+            "standard_error": 0.010678243105183786
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0065207607210154e-14,
+          "c4_operator_closure_error": 1.2079394606529734,
+          "c4_data_closure_defect": {
+            "mean": 0.11382163259901253,
+            "median": 0.10720940876650104,
+            "p90": 0.1601071061580569,
+            "standard_error": 0.0035772830467204575
+          }
+        },
+        "image_block_01": {
+          "equivariance_defect": {
+            "mean": 0.30433282758449043,
+            "median": 0.3030577685017259,
+            "p90": 0.4282307146480461,
+            "standard_error": 0.008507840443812998
+          },
+          "identity_defect": {
+            "mean": 0.5491489948476296,
+            "median": 0.5305532553734444,
+            "p90": 0.7835614703308786,
+            "standard_error": 0.01580243358223021
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8003839976480062e-14,
+          "c4_operator_closure_error": 1.2609777058002338,
+          "c4_data_closure_defect": {
+            "mean": 0.18952367224032146,
+            "median": 0.17966866330782633,
+            "p90": 0.2600727451842861,
+            "standard_error": 0.004696681433519283
+          }
+        },
+        "image_block_02": {
+          "equivariance_defect": {
+            "mean": 0.32037641995958094,
+            "median": 0.3167706832546213,
+            "p90": 0.4566899045639977,
+            "standard_error": 0.00926100948712899
+          },
+          "identity_defect": {
+            "mean": 0.5827594405028618,
+            "median": 0.5508117310899865,
+            "p90": 0.8097128834246082,
+            "standard_error": 0.016129225868350243
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8874492525693966e-14,
+          "c4_operator_closure_error": 1.2581113494014942,
+          "c4_data_closure_defect": {
+            "mean": 0.20682398807241897,
+            "median": 0.2004419467005643,
+            "p90": 0.2639388300334898,
+            "standard_error": 0.004096062399438466
+          }
+        },
+        "image_block_03": {
+          "equivariance_defect": {
+            "mean": 0.3799286508458453,
+            "median": 0.3648311077601077,
+            "p90": 0.5377355192202878,
+            "standard_error": 0.010168507608531463
+          },
+          "identity_defect": {
+            "mean": 0.6242979115974862,
+            "median": 0.5933677691488717,
+            "p90": 0.9097925375057183,
+            "standard_error": 0.01668102408474968
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0682616505731334e-14,
+          "c4_operator_closure_error": 1.263013747202279,
+          "c4_data_closure_defect": {
+            "mean": 0.28301078073788716,
+            "median": 0.27641384992282503,
+            "p90": 0.3682883426975679,
+            "standard_error": 0.005110305178285354
+          }
+        },
+        "image_block_04": {
+          "equivariance_defect": {
+            "mean": 0.37500106577310455,
+            "median": 0.3630480437055902,
+            "p90": 0.474307231256503,
+            "standard_error": 0.007791146732337071
+          },
+          "identity_defect": {
+            "mean": 0.6473112976701195,
+            "median": 0.6455671596272996,
+            "p90": 0.8605157551946726,
+            "standard_error": 0.014948456618889544
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.936140882335687e-14,
+          "c4_operator_closure_error": 1.2822439615553025,
+          "c4_data_closure_defect": {
+            "mean": 0.30122026450380374,
+            "median": 0.29072874874094334,
+            "p90": 0.39477646725075327,
+            "standard_error": 0.005643868622485427
+          }
+        },
+        "image_block_05": {
+          "equivariance_defect": {
+            "mean": 0.47109654422770236,
+            "median": 0.4594309350578346,
+            "p90": 0.6150797503112273,
+            "standard_error": 0.009117877935135634
+          },
+          "identity_defect": {
+            "mean": 0.7278696110093092,
+            "median": 0.7324830177901105,
+            "p90": 0.9405105945687628,
+            "standard_error": 0.01579627728618988
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.0580335978426425e-14,
+          "c4_operator_closure_error": 1.3000008155433913,
+          "c4_data_closure_defect": {
+            "mean": 0.4178172336399563,
+            "median": 0.40140531690824655,
+            "p90": 0.5278138836845715,
+            "standard_error": 0.007764807144916116
+          }
+        },
+        "image_block_06": {
+          "equivariance_defect": {
+            "mean": 0.5051120273792609,
+            "median": 0.5035221129412686,
+            "p90": 0.6546927554679363,
+            "standard_error": 0.01014507556656285
+          },
+          "identity_defect": {
+            "mean": 0.7318271353255016,
+            "median": 0.7296371232923534,
+            "p90": 0.9477217333071969,
+            "standard_error": 0.015792907397496832
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 3.189970256980711e-14,
+          "c4_operator_closure_error": 1.2864659379638088,
+          "c4_data_closure_defect": {
+            "mean": 0.46769175910260524,
+            "median": 0.4564016862853701,
+            "p90": 0.5966604064730311,
+            "standard_error": 0.008638426064978853
+          }
+        },
+        "function_mlp_01": {
+          "equivariance_defect": {
+            "mean": 0.7488877891793339,
+            "median": 0.7488877891793339,
+            "p90": 0.7488877891793339,
+            "standard_error": 0.0
+          },
+          "identity_defect": {
+            "mean": 0.9460911851111627,
+            "median": 0.9460911851111624,
+            "p90": 0.9460911851111624,
+            "standard_error": 3.161331182674473e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 512,
+            "underidentified": true
+          },
+          "orthogonality_error": 4.265477519289102e-14,
+          "c4_operator_closure_error": 1.4094033702258528,
+          "c4_data_closure_defect": {
+            "mean": 1.4573618511498254,
+            "median": 1.4573618511498252,
+            "p90": 1.4573618511498252,
+            "standard_error": 2.1075541217829815e-17
+          }
+        },
+        "function_mlp_02": {
+          "equivariance_defect": {
+            "mean": 0.47087487066016104,
+            "median": 0.470874870660161,
+            "p90": 0.470874870660161,
+            "standard_error": 5.268885304457454e-18
+          },
+          "identity_defect": {
+            "mean": 1.786254661097659,
+            "median": 1.7862546610976597,
+            "p90": 1.7862546610976597,
+            "standard_error": 6.322662365348946e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 512,
+            "underidentified": true
+          },
+          "orthogonality_error": 4.555069981704628e-14,
+          "c4_operator_closure_error": 1.4151124997610571,
+          "c4_data_closure_defect": {
+            "mean": 1.424129076612662,
+            "median": 1.4241290766126624,
+            "p90": 1.4241290766126624,
+            "standard_error": 4.215108243565963e-17
+          }
+        },
+        "function_mlp_03": {
+          "equivariance_defect": {
+            "mean": 0.4799375366649716,
+            "median": 0.4799375366649714,
+            "p90": 0.4799375366649714,
+            "standard_error": 1.5806655913372365e-17
+          },
+          "identity_defect": {
+            "mean": 0.7582172951553156,
+            "median": 0.7582172951553158,
+            "p90": 0.7582172951553158,
+            "standard_error": 2.1075541217829815e-17
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 1,
+            "dimension": 128,
+            "underidentified": true
+          },
+          "orthogonality_error": 1.5762597107766045e-14,
+          "c4_operator_closure_error": 1.385122978075914,
+          "c4_data_closure_defect": {
+            "mean": 1.3312056264208114,
+            "median": 1.3312056264208119,
+            "p90": 1.3312056264208119,
+            "standard_error": 4.215108243565963e-17
+          }
+        },
+        "shared_cross_attention": {
+          "equivariance_defect": {
+            "mean": 0.3698730028230375,
+            "median": 0.37630607506837416,
+            "p90": 0.42415592542547587,
+            "standard_error": 0.004239441370898173
+          },
+          "identity_defect": {
+            "mean": 0.7537085985455303,
+            "median": 0.7379654756014735,
+            "p90": 0.9326190389954343,
+            "standard_error": 0.014174366923131407
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.8821138023236265e-14,
+          "c4_operator_closure_error": 1.3261188512992015,
+          "c4_data_closure_defect": {
+            "mean": 1.1248556009377109,
+            "median": 1.1294807433059901,
+            "p90": 1.1614026175856216,
+            "standard_error": 0.002842735011907312
+          }
+        },
+        "output_cross_attention": {
+          "equivariance_defect": {
+            "mean": 0.27293313893892374,
+            "median": 0.22302257307119602,
+            "p90": 0.49205891958581227,
+            "standard_error": 0.01688325360733548
+          },
+          "identity_defect": {
+            "mean": 0.30407435715415365,
+            "median": 0.26015864600081345,
+            "p90": 0.5101178908768852,
+            "standard_error": 0.016044512470189114
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.923212443548363e-14,
+          "c4_operator_closure_error": 1.3266880999864945,
+          "c4_data_closure_defect": {
+            "mean": 0.220979315205116,
+            "median": 0.21366849200156837,
+            "p90": 0.26718666876684605,
+            "standard_error": 0.0033505369676241764
+          }
+        },
+        "image_final_norm": {
+          "equivariance_defect": {
+            "mean": 0.4860829317893063,
+            "median": 0.4806940811344632,
+            "p90": 0.6233699891286149,
+            "standard_error": 0.009909957215269967
+          },
+          "identity_defect": {
+            "mean": 0.707205165388367,
+            "median": 0.70271464782908,
+            "p90": 0.9295042442951926,
+            "standard_error": 0.015619479137730681
+          },
+          "samples_scored": 112,
+          "zero_norm_samples": 0,
+          "fit_rank": {
+            "source_rank": 128,
+            "dimension": 128,
+            "underidentified": false
+          },
+          "orthogonality_error": 2.938467909562126e-14,
+          "c4_operator_closure_error": 1.2742816870730471,
+          "c4_data_closure_defect": {
+            "mean": 0.4425050240048848,
+            "median": 0.4318679068134722,
+            "p90": 0.5642826798008626,
+            "standard_error": 0.008030061993698549
+          }
+        }
+      },
+      "spatial_image_layers": {
+        "image_input_tokens": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.38899779847707483,
+            "median": 0.38917403011671164,
+            "p90": 0.4121629613383557,
+            "standard_error": 0.0016791364011722219
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7586121511256226,
+            "median": 0.7627438718321254,
+            "p90": 0.834123910292948,
+            "standard_error": 0.0069358555873494845
+          },
+          "identity_channel_defect": {
+            "mean": 0.6106633308383972,
+            "median": 0.6104320720746863,
+            "p90": 0.6268038842778495,
+            "standard_error": 0.0011866088425915241
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.3433041860205502,
+            "median": 0.34295332992364147,
+            "p90": 0.4408264056837902,
+            "standard_error": 0.0073837085939735154
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.154309952527993,
+          "c4_data_closure_defect": {
+            "mean": 0.18225204375313434,
+            "median": 0.18169379342380343,
+            "p90": 0.1850301757527691,
+            "standard_error": 0.00019720891608396727
+          }
+        },
+        "image_block_01": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6961384342763807,
+            "median": 0.6937563452052592,
+            "p90": 0.7747234270184702,
+            "standard_error": 0.005502833633135216
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.780653991572568,
+            "median": 0.7786736366110257,
+            "p90": 0.8874948030337072,
+            "standard_error": 0.009143971635701601
+          },
+          "identity_channel_defect": {
+            "mean": 0.9095288221546083,
+            "median": 0.9098671314398532,
+            "p90": 0.992147578256043,
+            "standard_error": 0.006488172305543211
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6516092074198199,
+            "median": 0.6606574056758034,
+            "p90": 0.7806195764312854,
+            "standard_error": 0.010427436817639048
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0910145826996502,
+          "c4_data_closure_defect": {
+            "mean": 0.18101784422246167,
+            "median": 0.17464536583420542,
+            "p90": 0.21477770143934924,
+            "standard_error": 0.002886617668747241
+          }
+        },
+        "image_block_02": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6600503175313761,
+            "median": 0.6530273241016792,
+            "p90": 0.7464994243616299,
+            "standard_error": 0.006685445132782242
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7863013154126112,
+            "median": 0.7895109647267586,
+            "p90": 0.8943003561451357,
+            "standard_error": 0.008176777074150895
+          },
+          "identity_channel_defect": {
+            "mean": 0.8705248744333517,
+            "median": 0.871505010594841,
+            "p90": 0.9939053504713413,
+            "standard_error": 0.008113871923725202
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.7214906110336489,
+            "median": 0.7376129744943472,
+            "p90": 0.8507022493419696,
+            "standard_error": 0.010985711558952324
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0979216381370651,
+          "c4_data_closure_defect": {
+            "mean": 0.2745963387150378,
+            "median": 0.2677837576709704,
+            "p90": 0.32166119654655084,
+            "standard_error": 0.003676573692543753
+          }
+        },
+        "image_block_03": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6223855886584767,
+            "median": 0.6142546435437064,
+            "p90": 0.6929797418610125,
+            "standard_error": 0.004864623391739889
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8408384262916958,
+            "median": 0.8444387657850745,
+            "p90": 0.9383077987856397,
+            "standard_error": 0.007905944614299963
+          },
+          "identity_channel_defect": {
+            "mean": 0.8143053106196957,
+            "median": 0.81593420842151,
+            "p90": 0.8855174386134828,
+            "standard_error": 0.006041808757082351
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6676513617326089,
+            "median": 0.6719830762291199,
+            "p90": 0.7734058141538416,
+            "standard_error": 0.009653869540423098
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0918746112377988,
+          "c4_data_closure_defect": {
+            "mean": 0.27572697806368246,
+            "median": 0.2743389877556135,
+            "p90": 0.30864580183523216,
+            "standard_error": 0.0027155560686690614
+          }
+        },
+        "image_block_04": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.687760497691791,
+            "median": 0.6783560218838888,
+            "p90": 0.7603345621480463,
+            "standard_error": 0.005238663896541799
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8764928509370055,
+            "median": 0.8828710546347128,
+            "p90": 0.9640081232906983,
+            "standard_error": 0.007083615252396911
+          },
+          "identity_channel_defect": {
+            "mean": 0.8979199050908766,
+            "median": 0.8902666582095401,
+            "p90": 0.9932627025431523,
+            "standard_error": 0.006489718844407016
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6988741368573423,
+            "median": 0.7071164458986312,
+            "p90": 0.8111035335987279,
+            "standard_error": 0.010118277721295178
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.0884002892153706,
+          "c4_data_closure_defect": {
+            "mean": 0.33203300425728255,
+            "median": 0.3270047683449111,
+            "p90": 0.3712919109461509,
+            "standard_error": 0.003005629450141323
+          }
+        },
+        "image_block_05": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.7606061512451728,
+            "median": 0.7565933721210034,
+            "p90": 0.821743689812909,
+            "standard_error": 0.005356962058171775
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9679634523235817,
+            "median": 0.9783534058669712,
+            "p90": 1.0495258620312433,
+            "standard_error": 0.0060398249361570955
+          },
+          "identity_channel_defect": {
+            "mean": 0.9667156213342599,
+            "median": 0.9638793216866518,
+            "p90": 1.073094177985888,
+            "standard_error": 0.007360949313529715
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.8118209519011073,
+            "median": 0.8241985090942674,
+            "p90": 0.9394014374117817,
+            "standard_error": 0.010821150440079627
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1340775702728625,
+          "c4_data_closure_defect": {
+            "mean": 0.4382216295233312,
+            "median": 0.4345454604862648,
+            "p90": 0.4887901740557347,
+            "standard_error": 0.0036224704110968415
+          }
+        },
+        "image_block_06": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.7792566303274836,
+            "median": 0.7704118918218859,
+            "p90": 0.8465205710123156,
+            "standard_error": 0.00611756145671569
+          },
+          "foreground_equivariance_defect": {
+            "mean": 1.0326397591872536,
+            "median": 1.0366413856036703,
+            "p90": 1.110380530710738,
+            "standard_error": 0.005708334473597834
+          },
+          "identity_channel_defect": {
+            "mean": 0.9663179388667914,
+            "median": 0.9555820410803018,
+            "p90": 1.092603982753049,
+            "standard_error": 0.00887833955305159
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.8254347528395868,
+            "median": 0.8260050368619769,
+            "p90": 0.9561590444552518,
+            "standard_error": 0.011424875685381234
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1300538764533747,
+          "c4_data_closure_defect": {
+            "mean": 0.4673510899676336,
+            "median": 0.4640107560715584,
+            "p90": 0.5208780275084816,
+            "standard_error": 0.003271473806300137
+          }
+        },
+        "image_final_norm": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.766038287000258,
+            "median": 0.7656989548424431,
+            "p90": 0.8165818004959853,
+            "standard_error": 0.004638339221278459
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9923063889642586,
+            "median": 0.9919013356856455,
+            "p90": 1.0639417349322167,
+            "standard_error": 0.005393497116183023
+          },
+          "identity_channel_defect": {
+            "mean": 0.9509577771445107,
+            "median": 0.9504484930309696,
+            "p90": 1.0422619884405069,
+            "standard_error": 0.007256694136102811
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.8346340434912872,
+            "median": 0.8401672208092026,
+            "p90": 0.9518610370623615,
+            "standard_error": 0.009917319407765059
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "c4_channel_closure_error": 1.1183012138810997,
+          "c4_data_closure_defect": {
+            "mean": 0.47082882577227714,
+            "median": 0.4723587047035283,
+            "p90": 0.5274927407363661,
+            "standard_error": 0.0034533623009177384
+          }
+        }
+      },
+      "spatial_mirror_layers": {
+        "image_input_tokens": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.35616422664688235,
+            "median": 0.3543333881595765,
+            "p90": 0.3795614754064514,
+            "standard_error": 0.0018180219125814496
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7232704013878013,
+            "median": 0.7302757514812059,
+            "p90": 0.8391944000482408,
+            "standard_error": 0.008307940606368776
+          },
+          "identity_channel_defect": {
+            "mean": 0.5064727975077948,
+            "median": 0.505078576393768,
+            "p90": 0.5249840218348116,
+            "standard_error": 0.00136975454622478
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.3220587012559009,
+            "median": 0.31230658050010374,
+            "p90": 0.42739544989349254,
+            "standard_error": 0.0074672295441791945
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.015391734112577082,
+          "m2_data_closure_defect": {
+            "mean": 0.007083881867944705,
+            "median": 0.007019299992229304,
+            "p90": 0.008657003574918302,
+            "standard_error": 9.922932489644126e-05
+          }
+        },
+        "image_block_01": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.48250430444638426,
+            "median": 0.48026914921050645,
+            "p90": 0.5258417536513376,
+            "standard_error": 0.002894760745183851
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.6600719193223775,
+            "median": 0.6488881673365994,
+            "p90": 0.7791639693686415,
+            "standard_error": 0.009973773854550921
+          },
+          "identity_channel_defect": {
+            "mean": 0.6071693333741456,
+            "median": 0.6016637845672984,
+            "p90": 0.6790029320956398,
+            "standard_error": 0.004732386032512526
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5017319836209176,
+            "median": 0.4967131763232341,
+            "p90": 0.6460076315164718,
+            "standard_error": 0.009723209345323187
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.47239483067386584,
+          "m2_data_closure_defect": {
+            "mean": 0.04609211446496496,
+            "median": 0.045190565244084,
+            "p90": 0.05347928324518254,
+            "standard_error": 0.0005241872152575265
+          }
+        },
+        "image_block_02": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.49519846263452383,
+            "median": 0.4870741116941023,
+            "p90": 0.56993927048042,
+            "standard_error": 0.005167404556111828
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.6970239303670611,
+            "median": 0.6921336883900682,
+            "p90": 0.8242194452631154,
+            "standard_error": 0.008556937417941193
+          },
+          "identity_channel_defect": {
+            "mean": 0.6368858639678575,
+            "median": 0.6347550422110555,
+            "p90": 0.7292970696079603,
+            "standard_error": 0.007271842983609344
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5767209877150055,
+            "median": 0.5743185644002626,
+            "p90": 0.7286043682983924,
+            "standard_error": 0.0113476564178224
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.5731178569089888,
+          "m2_data_closure_defect": {
+            "mean": 0.07647495867011624,
+            "median": 0.07480557676039903,
+            "p90": 0.09207959018751491,
+            "standard_error": 0.00118339771113048
+          }
+        },
+        "image_block_03": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.46753622311407356,
+            "median": 0.463322949710473,
+            "p90": 0.518095628723836,
+            "standard_error": 0.0035697376349678508
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.7727073382691209,
+            "median": 0.7842192285938981,
+            "p90": 0.887261694108086,
+            "standard_error": 0.008574390518513653
+          },
+          "identity_channel_defect": {
+            "mean": 0.5904332955395791,
+            "median": 0.59440626206369,
+            "p90": 0.6500896868713909,
+            "standard_error": 0.005146715832805984
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5407063056632263,
+            "median": 0.549480644501511,
+            "p90": 0.6678185280087876,
+            "standard_error": 0.009361064693903484
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.6211468270641586,
+          "m2_data_closure_defect": {
+            "mean": 0.09274681091211232,
+            "median": 0.09092191327869842,
+            "p90": 0.11165120370254605,
+            "standard_error": 0.0011714564466666977
+          }
+        },
+        "image_block_04": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.4952067206052351,
+            "median": 0.494799781301205,
+            "p90": 0.5349606843940592,
+            "standard_error": 0.00304003345524608
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8006237237461423,
+            "median": 0.8028632498677335,
+            "p90": 0.8958661091337519,
+            "standard_error": 0.006977110375028387
+          },
+          "identity_channel_defect": {
+            "mean": 0.6021933751842569,
+            "median": 0.598337669872846,
+            "p90": 0.6743549496924772,
+            "standard_error": 0.004853751950669729
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.5427477313418196,
+            "median": 0.544611762098333,
+            "p90": 0.6686978760591296,
+            "standard_error": 0.009138456107047424
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.6702083623781522,
+          "m2_data_closure_defect": {
+            "mean": 0.1200462377821441,
+            "median": 0.11913689941857868,
+            "p90": 0.13604974456693708,
+            "standard_error": 0.0013667983645812374
+          }
+        },
+        "image_block_05": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.5973162990602603,
+            "median": 0.5954201447266422,
+            "p90": 0.67682912443703,
+            "standard_error": 0.005343273179193981
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.8833408787611284,
+            "median": 0.8847279560089756,
+            "p90": 0.9690997891823615,
+            "standard_error": 0.00679669160859297
+          },
+          "identity_channel_defect": {
+            "mean": 0.674388323042475,
+            "median": 0.6657361239758143,
+            "p90": 0.7766269080252999,
+            "standard_error": 0.007284949939554549
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6267374133024275,
+            "median": 0.6270541860647639,
+            "p90": 0.7820330786328781,
+            "standard_error": 0.010692695065712444
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7406126984867862,
+          "m2_data_closure_defect": {
+            "mean": 0.21578389306248852,
+            "median": 0.21090923113188859,
+            "p90": 0.2496411916163565,
+            "standard_error": 0.002192011883243556
+          }
+        },
+        "image_block_06": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6156106069585073,
+            "median": 0.6057966432169196,
+            "p90": 0.6989454040187019,
+            "standard_error": 0.006067269831840146
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9607615063561831,
+            "median": 0.9631480664516976,
+            "p90": 1.062003322401359,
+            "standard_error": 0.00738902853086272
+          },
+          "identity_channel_defect": {
+            "mean": 0.6771468602583159,
+            "median": 0.664444489124915,
+            "p90": 0.7942349898759397,
+            "standard_error": 0.008139746005884426
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6388495889707629,
+            "median": 0.6320341571504029,
+            "p90": 0.7950465021874857,
+            "standard_error": 0.011167534347312935
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7643715064213972,
+          "m2_data_closure_defect": {
+            "mean": 0.23387965748764925,
+            "median": 0.22851223420104289,
+            "p90": 0.2677935488628192,
+            "standard_error": 0.0026440504020871754
+          }
+        },
+        "image_final_norm": {
+          "samples_scored": 112,
+          "equivariance_defect": {
+            "mean": 0.6175952424417138,
+            "median": 0.6121726799140658,
+            "p90": 0.7184128873946962,
+            "standard_error": 0.0065291538150809405
+          },
+          "foreground_equivariance_defect": {
+            "mean": 0.9162022034196449,
+            "median": 0.9148220181501413,
+            "p90": 1.0200656277262243,
+            "standard_error": 0.007338062599738217
+          },
+          "identity_channel_defect": {
+            "mean": 0.6825533509371812,
+            "median": 0.6676992644612749,
+            "p90": 0.8225433404434762,
+            "standard_error": 0.008747290485303066
+          },
+          "no_spatial_permutation_defect": {
+            "mean": 0.6616887219710504,
+            "median": 0.6560602272948326,
+            "p90": 0.8194059295500079,
+            "standard_error": 0.011319230837239461
+          },
+          "fit_rank": {
+            "source_gram_rank": 128,
+            "dimension": 128,
+            "underidentified": false,
+            "matched_training_tokens": 102400
+          },
+          "m2_channel_closure_error": 0.7415026131199777,
+          "m2_data_closure_defect": {
+            "mean": 0.22944077790789041,
+            "median": 0.22436724128331859,
+            "p90": 0.26189584283628065,
+            "standard_error": 0.002576714704116818
+          }
+        }
+      },
+      "input_rotation_resize_mismatch": {
+        "mean": 0.04689732142857143,
+        "median": 0.0475,
+        "p90": 0.075,
+        "standard_error": 0.0016477303233548085
+      },
+      "input_reflection_resize_mismatch": {
+        "mean": 0.04363839285714286,
+        "median": 0.0425,
+        "p90": 0.06725000000000002,
+        "standard_error": 0.0016709510146419235
+      },
+      "original_up_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.8928571428571429,
+        "pixel_accuracy": 0.9988169642857143,
+        "object_pixel_accuracy": 0.9830533595502023
+      },
+      "transported_right_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.0,
+        "pixel_accuracy": 0.9071875,
+        "object_pixel_accuracy": 0.16319798646465186
+      },
+      "native_output": {
+        "samples": 112,
+        "exact_grid_accuracy": 0.8928571428571429,
+        "pixel_accuracy": 0.9988169642857143,
+        "object_pixel_accuracy": 0.9830533595502023
+      },
+      "unchanged_task_control": {
+        "eligible_samples": 93,
+        "distinct_up_right_targets": 93,
+        "right_prediction_matching_wrong_up": {
+          "samples": 93,
+          "exact_grid_accuracy": 0.0,
+          "pixel_accuracy": 0.9221774193548387,
+          "object_pixel_accuracy": 0.2599368194417658
+        },
+        "model_with_up_on_rotated_input": {
+          "samples": 93,
+          "exact_grid_accuracy": 0.8064516129032258,
+          "pixel_accuracy": 0.9986290322580645,
+          "object_pixel_accuracy": 0.9829034251514269
+        },
+        "model_with_up_matching_right_target": {
+          "samples": 93,
+          "exact_grid_accuracy": 0.0,
+          "pixel_accuracy": 0.891774193548387,
+          "object_pixel_accuracy": 0.1145844129769506
+        }
+      }
+    }
+  },
+  "evaluation_seed": 42,
+  "eval_pairs_per_task": 128,
+  "protocol": "Atomic ID first stage; transported copies are counterfactuals, not composition OOD",
+  "raw_geometry": "g(T_up(x)) = T_right(g(x)); g is whole-grid clockwise 90 degrees",
+  "pooling": "foreground mean image tokens; mean shared/output queries; function vectors",
+  "spatial_image_metric": "All ViT image tokens, matched by inverse 90-degree rotation; per-layer orthogonal channel map fitted on ID train",
+  "group_identities": "Per ViT image layer: rho(R)^4 ~= I for clockwise rotation and rho(M)^2 ~= I for left-right reflection",
+  "resize": "Raw-grid transforms precede existing nearest-neighbor model resizing; resize need not commute with g",
+  "limitations": [
+    "Function vectors are constant per task, so their maps are underidentified",
+    "Image layers have no task context, so no direction readout is fitted there",
+    "A direction readout is omitted if native right examples are absent from ID train",
+    "The transported task token is explicitly right; this tests task transport, not automatic direction inference",
+    "Procrustes does not enforce Q^4=I; C4 closure is reported separately",
+    "Spatial-token metrics retain position but are affected by raw-grid resizing",
+    "C1 OOD compositions require a subsequent protocol"
+  ]
+}

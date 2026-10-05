@@ -221,3 +221,11 @@ rotation/translation squares, and run commands are in
 The rot90 and translate_up checkpoint-progression evaluator, W&B sweep status,
 run commands, and local metrics are in
 [C1_ATOMIC_PROGRESSION.md](C1_ATOMIC_PROGRESSION.md).
+
+## Atomic ID task equivariance
+
+For the image-only per-layer study of clockwise rotation, left-right reflection,
+and the pure identities `rho(R)^4 ~= I` and `rho(M)^2 ~= I`, see
+[C1_VIT_SPATIAL_SYMMETRIES.md](C1_VIT_SPATIAL_SYMMETRIES.md). This path calls
+the trained ViT image encoder directly and does not use function tokens or the
+decoder.
