@@ -224,8 +224,12 @@ run commands, and local metrics are in
 
 ## Atomic ID task equivariance
 
-For the image-only per-layer study of clockwise rotation, left-right reflection,
-and the pure identities `rho(R)^4 ~= I` and `rho(M)^2 ~= I`, see
-[C1_VIT_SPATIAL_SYMMETRIES.md](C1_VIT_SPATIAL_SYMMETRIES.md). This path calls
-the trained ViT image encoder directly and does not use function tokens or the
-decoder.
+For the full image-only D4 study across C1 experiments 1 through 5, including
+all eight spatial actions and all 64 group composition laws at every trained
+ViT layer, see [C1_VIT_D4_SYMMETRIES.md](C1_VIT_D4_SYMMETRIES.md). This path
+calls the trained ViT image encoder directly and does not use function tokens,
+color actions, or the decoder.
+
+The earlier experiment-1-only rotation/reflection probe and its pure identities
+`rho(R)^4 ~= I` and `rho(M)^2 ~= I` are documented in
+[C1_VIT_SPATIAL_SYMMETRIES.md](C1_VIT_SPATIAL_SYMMETRIES.md).
