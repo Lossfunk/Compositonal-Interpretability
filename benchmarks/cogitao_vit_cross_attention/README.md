@@ -233,3 +233,10 @@ color actions, or the decoder.
 The earlier experiment-1-only rotation/reflection probe and its pure identities
 `rho(R)^4 ~= I` and `rho(M)^2 ~= I` are documented in
 [C1_VIT_SPATIAL_SYMMETRIES.md](C1_VIT_SPATIAL_SYMMETRIES.md).
+
+## Atomic-pair action transfer and oracle algebra
+
+For the five-state oracle experiment on every atomic pair across C1 experiments
+1–5, with per-layer action transfer, gated commutators, learned relation
+retention, OOD object-accuracy correlations, and W&B logging, see
+[C1_ATOMIC_PAIR_EXPERIMENTS.md](C1_ATOMIC_PAIR_EXPERIMENTS.md).
