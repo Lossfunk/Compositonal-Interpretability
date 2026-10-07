@@ -206,3 +206,6 @@ CVR
 CVR-dataset
 .claude
 # End of https://www.toptal.com/developers/gitignore/api/python,linux
+
+# Generated transfer probes and representations stay local; publish CSV/JSON reports.
+artifacts/cogitao_c1_compositional_transfer*/**/*.npz

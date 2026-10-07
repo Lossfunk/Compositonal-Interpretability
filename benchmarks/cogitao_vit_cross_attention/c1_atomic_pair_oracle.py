@@ -170,12 +170,22 @@ def oracle_sequence(grid, suite):
     return value
 
 
-def oracle_states(grid, f, g):
-    """fgx means f(g(x)); gfx means g(f(x)). All five states must be valid."""
+def oracle_states(grid, f, g, *, require_reverse=True):
+    """fgx=f(g(x)), task order [g,f]. Reverse validity is required by default.
+
+    Transfer comparisons can set require_reverse=False: x/fx/gx/fgx remain
+    required, while unsupported gfx is omitted rather than dropping the example.
+    Object identities persist through both ordered programs.
+    """
     x = np.asarray(grid, dtype=np.int64)
     objects = infer_objects(x)
     f_objects, fx = apply(objects, f, x.shape)
     g_objects, gx = apply(objects, g, x.shape)
     _, fgx = apply(g_objects, f, x.shape)
-    _, gfx = apply(f_objects, g, x.shape)
-    return dict(x=x, fx=fx, gx=gx, fgx=fgx, gfx=gfx)
+    states = dict(x=x, fx=fx, gx=gx, fgx=fgx)
+    try:
+        _, states["gfx"] = apply(f_objects, g, x.shape)
+    except InvalidOracle:
+        if require_reverse:
+            raise
+    return states

@@ -97,7 +97,14 @@ def encode_chart(collector, grids, model, args, device):
     return result
 
 
-def collect_atomic_fit(data, functions, args):
+def collect_atomic_fit(data, functions, args, *, split="train",
+                       excluded_state_keys=None, eligibility=None, minimum_pairs=2):
+    """Select audited atomic pairs; optional exclusions also serve held-out evaluation.
+
+    fit_probes enforces train provenance. Composition rows are never selected.
+    eligibility returns an exclusion reason or None for additional state checks.
+    """
+    excluded_state_keys = excluded_state_keys or set()
     rng = np.random.default_rng(args.seed)
     selected, coverage, excluded = {}, {}, set()
     for function in functions:
@@ -117,7 +124,15 @@ def collect_atomic_fit(data, functions, args):
             except InvalidOracle as error:
                 counts["invalid:" + str(error)] += 1
                 continue
-            audit_target(row, output, "train", args)
+            audit_target(row, output, split, args)
+            counts["oracle_valid"] += 1
+            if {key, grid_key(output)} & excluded_state_keys:
+                counts["fit_state_overlap"] += 1
+                continue
+            reason = eligibility([row["input"], output]) if eligibility else None
+            if reason:
+                counts[reason] += 1
+                continue
             pairs.append(dict(row, oracle_output=output))
             seen.add(key)
             excluded.update((key, grid_key(output)))
@@ -126,13 +141,15 @@ def collect_atomic_fit(data, functions, args):
             if len(pairs) >= args.fit_images_per_function:
                 break
         counts["selected"] = len(pairs)
-        if len(pairs) < 2:
-            raise ValueError(f"Fewer than two audited atomic fit pairs for {function}")
+        if len(pairs) < minimum_pairs:
+            raise ValueError(f"Fewer than {minimum_pairs} audited atomic pairs for {function}")
         selected[function], coverage[function] = pairs, dict(counts)
     return selected, coverage, excluded
 
 
 def fit_probes(model, collector, data, functions, args, device, fingerprint):
+    if data.path.stem != "train":
+        raise ValueError("Atomic probes must be fitted only on the train split")
     selected, coverage, excluded = collect_atomic_fit(data, functions, args)
     arrays, diagnostics = {}, {}
     for function, pairs in selected.items():
@@ -160,8 +177,13 @@ def fit_probes(model, collector, data, functions, args, device, fingerprint):
     return arrays, metadata
 
 
-def sample_pair(data, split, f, g, args, excluded):
-    """ID uses atomic inputs; OOD uses actual g -> f composition rows."""
+def sample_pair(data, split, f, g, args, excluded, *, require_reverse=True,
+                eligibility=None):
+    """ID atomic inputs / OOD [g,f] rows; fgx=f(g(x)), token order g -> f.
+
+    require_reverse=False retains forward-valid examples without gfx. Additional
+    eligibility checks return an exclusion reason and share the coverage audit.
+    """
     if split.endswith("_ood"):
         candidates = [index for index, suite in enumerate(data.suites) if suite == (g, f)]
     else:
@@ -171,34 +193,44 @@ def sample_pair(data, split, f, g, args, excluded):
     counts = Counter(available=len(candidates))
     selected, seen = [], set()
     for index in candidates:
+        counts["examined"] += 1
         row = data.row(index)
         key = grid_key(row["input"])
         if key in seen:
             counts["duplicate_input"] += 1
             continue
         try:
-            states = oracle_states(row["input"], f, g)
+            states = oracle_states(row["input"], f, g, require_reverse=require_reverse)
             recorded = (states["fgx"] if split.endswith("_ood") else
                         oracle_sequence(row["input"], row["suite"]))
         except InvalidOracle as error:
             counts["invalid:" + str(error)] += 1
             continue
         audit_target(row, recorded, split, args)
+        counts["oracle_valid"] += 1
         if any(grid_key(value) in excluded for value in states.values()):
             counts["fit_state_overlap"] += 1
             continue
+        reason = eligibility(list(states.values())) if eligibility else None
+        if reason:
+            counts[reason] += 1
+            continue
         selected.append(dict(row, states=states))
         seen.add(key)
-        counts["oracle_commutes"] += int(np.array_equal(states["fgx"], states["gfx"]))
+        counts["reverse_valid"] += int("gfx" in states)
+        counts["oracle_commutes"] += int("gfx" in states and np.array_equal(states["fgx"], states["gfx"]))
+        counts["f_context_no_op"] += int(np.array_equal(states["gx"], states["fgx"]))
         counts["f_no_op"] += int(np.array_equal(states["x"], states["fx"]))
         counts["g_no_op"] += int(np.array_equal(states["x"], states["gx"]))
         if len(selected) >= args.eval_images_per_pair:
             break
     counts["selected"] = len(selected)
-    counts["audited_exact_targets"] = len(selected) + counts["fit_state_overlap"]
+    counts["audited_exact_targets"] = counts["oracle_valid"]
+    counts["unexamined"] = len(candidates) - counts["examined"]
     counts["unexamined_candidates"] = max(len(candidates) - sum(
         count for key, count in counts.items() if key.startswith("invalid:")) -
-        counts["duplicate_input"] - counts["fit_state_overlap"] - len(selected), 0)
+        counts["duplicate_input"] - counts["fit_state_overlap"] -
+        counts["resized_fit_state_overlap"] - len(selected), 0)
     return selected, dict(counts)
 
 
@@ -245,11 +277,12 @@ def accuracy_fields(all_scores, selected):
                 oracle_valid_object_accuracy=float(np.mean(subset)) if subset else None)
 
 
-def write_csv(path, rows):
-    if not rows:
+def write_csv(path, rows, *, fieldnames=None):
+    """Write records, with an optional schema for an empty supported-result table."""
+    if not rows and fieldnames is None:
         path.write_text("", encoding="utf-8")
         return
-    fields = list(dict.fromkeys(key for row in rows for key in row))
+    fields = fieldnames or list(dict.fromkeys(key for row in rows for key in row))
     with path.open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields)
         writer.writeheader()

@@ -45,7 +45,7 @@ class SyntheticCollector:
     def encode(self, grids, _device, _batch_size):
         marker = int(np.asarray(grids[0])[0, 0])
         values = self.source if marker == 0 else self.rotation if marker == 1 else self.reflection
-        return {"image_input_tokens": values[:len(grids)]}
+        return {name: values[:len(grids)] for name in ("image_input_tokens", "image_final_norm")}
 
 
 def test_fitted_actions_recover_r4_and_m2():
@@ -68,10 +68,10 @@ def test_fitted_actions_recover_r4_and_m2():
         def encode(self, grids, device, batch_size):
             first = np.asarray(grids[0])
             if np.array_equal(first, rotate_clockwise(rows[0]["input"])):
-                return {"image_input_tokens": self.rotation[:len(grids)]}
+                return {name: self.rotation[:len(grids)] for name in ("image_input_tokens", "image_final_norm")}
             if np.array_equal(first, reflect_left_right(rows[0]["input"])):
-                return {"image_input_tokens": self.reflection[:len(grids)]}
-            return {"image_input_tokens": self.source[:len(grids)]}
+                return {name: self.reflection[:len(grids)] for name in ("image_input_tokens", "image_final_norm")}
+            return {name: self.source[:len(grids)] for name in ("image_input_tokens", "image_final_norm")}
 
     # Use an asymmetric colored marker so rotation/reflection remain distinct.
     for row in rows:
@@ -92,6 +92,8 @@ def test_fitted_actions_recover_r4_and_m2():
         torch.device("cpu"), 3)
     assert rotation_result["image_input_tokens"]["operator_closure_error"] < 1e-6
     assert mirror_result["image_input_tokens"]["operator_closure_error"] < 1e-6
+    assert rotation_result["image_final_norm"]["operator_closure_error"] < 1e-6
+    assert mirror_result["image_final_norm"]["operator_closure_error"] < 1e-6
 
 
 def test_collector_never_calls_function_or_decoder_paths():

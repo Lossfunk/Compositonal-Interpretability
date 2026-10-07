@@ -1,0 +1,253 @@
+{
+  "checks": [
+    {
+      "experiment": 1,
+      "check": "atomic_fit_indices",
+      "function": "mirror_horizontal",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "atomic_fit_indices",
+      "function": "rot90",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "atomic_fit_indices",
+      "function": "translate_up",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "matched_eval_indices",
+      "split": "val",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "matched_eval_indices",
+      "split": "test",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "matched_eval_indices",
+      "split": "val_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 1,
+      "check": "matched_eval_indices",
+      "split": "test_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "atomic_fit_indices",
+      "function": "change_shape_color",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "atomic_fit_indices",
+      "function": "fill_holes_different_color",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "atomic_fit_indices",
+      "function": "pad_right",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "matched_eval_indices",
+      "split": "val",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "matched_eval_indices",
+      "split": "test",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "matched_eval_indices",
+      "split": "val_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 2,
+      "check": "matched_eval_indices",
+      "split": "test_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "atomic_fit_indices",
+      "function": "crop_bottom_side",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "atomic_fit_indices",
+      "function": "pad_top",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "atomic_fit_indices",
+      "function": "rot90",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "matched_eval_indices",
+      "split": "val",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "matched_eval_indices",
+      "split": "test",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "matched_eval_indices",
+      "split": "val_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 3,
+      "check": "matched_eval_indices",
+      "split": "test_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "atomic_fit_indices",
+      "function": "change_shape_color",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "atomic_fit_indices",
+      "function": "crop_contours",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "atomic_fit_indices",
+      "function": "double_right",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "matched_eval_indices",
+      "split": "val",
+      "samples": 11,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "matched_eval_indices",
+      "split": "test",
+      "samples": 8,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "matched_eval_indices",
+      "split": "val_ood",
+      "samples": 55,
+      "status": "passed"
+    },
+    {
+      "experiment": 4,
+      "check": "matched_eval_indices",
+      "split": "test_ood",
+      "samples": 61,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "atomic_fit_indices",
+      "function": "extend_contours_same_color",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "atomic_fit_indices",
+      "function": "mirror_vertical",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "atomic_fit_indices",
+      "function": "pad_left",
+      "samples": 256,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "matched_eval_indices",
+      "split": "val",
+      "samples": 126,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "matched_eval_indices",
+      "split": "test",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "matched_eval_indices",
+      "split": "val_ood",
+      "samples": 128,
+      "status": "passed"
+    },
+    {
+      "experiment": 5,
+      "check": "matched_eval_indices",
+      "split": "test_ood",
+      "samples": 128,
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "atomic_functions": 15,
+  "split_programs": 20,
+  "checkpoints_unchanged": 5
+}

@@ -132,14 +132,15 @@ def read_atomic_id_images(root: Path, experiment: int, split: str,
     return rows, dict(coverage)
 
 
-def load_c1_model(path: Path, experiment: int, device: torch.device):
+def load_c1_model(path: Path, experiment: int, device: torch.device,
+                  *, minimum_global_step: int = 1000):
     checkpoint = torch.load(path, map_location="cpu", weights_only=False)
     config = _checkpoint_config(checkpoint)
     train = config.get("data", {}).get("train", {}).get("init_args", {})
     if int(train.get("setting", -1)) != 1 or int(train.get("experiment", -1)) != experiment:
         raise ValueError(f"Checkpoint is not C1 experiment {experiment}")
     global_step = int(checkpoint.get("global_step", 0))
-    if global_step < 1000:
+    if global_step < minimum_global_step:
         raise ValueError(f"Checkpoint has only {global_step} training steps")
     model = FunctionConditionedViTCrossAttentionModel(config)
     model.load_state_dict(checkpoint["state_dict"], strict=True)

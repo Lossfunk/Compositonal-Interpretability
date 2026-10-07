@@ -1,0 +1,687 @@
+{
+  "protocol_version": 1,
+  "convention": "pair (f,g): fgx=f(g(x)); task-token order [g,f] means g -> f",
+  "checkpoint_path": "/home/ubuntu/cogitao-research/checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/milestone_025pct.ckpt",
+  "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+  "git_commit": "dfec9cbb2afe6616194c1fb41430c0c5d2bc4208",
+  "global_step": 19500,
+  "experiment_id": 1,
+  "fit": {
+    "protocol_version": 1,
+    "experiment": 1,
+    "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+    "functions": [
+      "mirror_horizontal",
+      "rot90",
+      "translate_up"
+    ],
+    "layers": [
+      "image_input_tokens",
+      "image_block_01",
+      "image_block_02",
+      "image_block_03",
+      "image_block_04",
+      "image_block_05",
+      "image_block_06",
+      "image_final_norm"
+    ],
+    "pool_grid": 2,
+    "resolution": [
+      20,
+      20
+    ],
+    "seed": 42,
+    "ridge": 0.01,
+    "coverage": {
+      "mirror_horizontal": {
+        "available": 11111,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      },
+      "rot90": {
+        "available": 11111,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      },
+      "translate_up": {
+        "available": 11112,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      }
+    },
+    "diagnostics": {
+      "mirror_horizontal": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 1.9607042718794612e-06,
+          "training_relative_error": 8.570135067099071e-07
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.004411809553541316,
+          "training_relative_error": 1.3079021511318898e-05
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.011267436371295738,
+          "training_relative_error": 1.2994213653969884e-05
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.015361318544823975,
+          "training_relative_error": 1.3157583376515777e-05
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.01737174840713795,
+          "training_relative_error": 1.3028960697594418e-05
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.02211499460082503,
+          "training_relative_error": 1.2843065761894786e-05
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.02742932175709949,
+          "training_relative_error": 1.3180592590995489e-05
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.007463731057744796,
+          "training_relative_error": 1.324091195775228e-05
+        }
+      },
+      "rot90": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 2.1232208465126246e-06,
+          "training_relative_error": 8.147041589013384e-07
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.002482697564573308,
+          "training_relative_error": 1.0181925009716317e-05
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.00617914352398763,
+          "training_relative_error": 1.0991584226466877e-05
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.010905218379623674,
+          "training_relative_error": 1.1248987429276753e-05
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.013099315737215492,
+          "training_relative_error": 1.1401401778425913e-05
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.01645057686163853,
+          "training_relative_error": 1.128405668542442e-05
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.01922140078138675,
+          "training_relative_error": 1.1366460904795543e-05
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.005495605260713373,
+          "training_relative_error": 1.132402431630926e-05
+        }
+      },
+      "translate_up": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 1.4232584990179348e-06,
+          "training_relative_error": 6.40576485421833e-07
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.004290802672913755,
+          "training_relative_error": 1.2078344539495894e-05
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.009348665231765994,
+          "training_relative_error": 1.2160474040461997e-05
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.015405815454636094,
+          "training_relative_error": 1.2200105663114182e-05
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.02091607837730189,
+          "training_relative_error": 1.243892506384836e-05
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.028018856324001595,
+          "training_relative_error": 1.2967075670955023e-05
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.03137022874386901,
+          "training_relative_error": 1.2874493304652016e-05
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "rank": 1,
+          "underidentified": true,
+          "ridge_penalty": 0.007578679421617853,
+          "training_relative_error": 1.2908676069128466e-05
+        }
+      }
+    },
+    "fit_split": "train",
+    "oracle_source": "https://github.com/yassinetb/COGITAO/blob/main/arcworld/transformations/shape_transformations.py",
+    "representation_path": "encode_images",
+    "function_tokens_in_probe": false,
+    "transfer_protocol_version": 1,
+    "pca_fit_split": "train",
+    "pca_diagnostics": {
+      "mirror_horizontal": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 0.030930733254936896
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 3.0685768567597473
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 5.619495210919891
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 7.7369721762354615
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 9.941901676719759
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 12.123328466155801
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 13.928202257170325
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 7.322061122726038
+        }
+      },
+      "rot90": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 0.06205404479098584
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 1.7380063589063135
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 5.860701657276265
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 9.617413510052437
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 11.302721012695036
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 14.255543117213602
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 16.270642604666673
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 8.675775921447414
+        }
+      },
+      "translate_up": {
+        "image_input_tokens": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 0.06775270507400108
+        },
+        "image_block_01": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 2.3102647583100127
+        },
+        "image_block_02": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 4.026477406456783
+        },
+        "image_block_03": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 4.5018631923805765
+        },
+        "image_block_04": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 5.0230646582173835
+        },
+        "image_block_05": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 5.599954803424014
+        },
+        "image_block_06": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 6.1069579794230915
+        },
+        "image_final_norm": {
+          "samples": 2,
+          "dimension": 512,
+          "effective_rank": 1,
+          "centered": true,
+          "residual_mean_norm": 2.928331130299897
+        }
+      }
+    },
+    "pca_ranks": [
+      1
+    ],
+    "pca_variance": [
+      0.9,
+      0.95
+    ],
+    "pca_coverage": {
+      "mirror_horizontal": {
+        "available": 11111,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      },
+      "rot90": {
+        "available": 11111,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      },
+      "translate_up": {
+        "available": 11112,
+        "audited_exact_targets": 2,
+        "no_op": 0,
+        "selected": 2
+      }
+    }
+  },
+  "heldout_programs": [
+    [
+      "translate_up",
+      "rot90"
+    ]
+  ],
+  "oracle_source": "https://github.com/yassinetb/COGITAO/blob/main/arcworld/transformations/shape_transformations.py",
+  "calibration_unit": "pixel; NLL=sum over grid; cross_entropy=mean over grid",
+  "prediction_target_field": "zeros; oracle labels only used after forward",
+  "foreground": "prediction/target nonzero union",
+  "coverage": [
+    {
+      "checkpoint_path": "/home/ubuntu/cogitao-research/checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/milestone_025pct.ckpt",
+      "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+      "git_commit": "dfec9cbb2afe6616194c1fb41430c0c5d2bc4208",
+      "experiment_id": 1,
+      "split": "val_ood",
+      "f": "rot90",
+      "g": "translate_up",
+      "program": "translate_up -> rot90",
+      "function_ordering": "pair (f,g): fgx=f(g(x)); task-token order [g,f] means g -> f",
+      "oracle_valid_count": 1,
+      "model_sample_count": 1,
+      "sample_count": 1,
+      "layer": "",
+      "seed": 42,
+      "global_step": 19500,
+      "probe_fit_sample_count": 2,
+      "g_probe_fit_sample_count": 2,
+      "ridge": 0.01,
+      "pool_grid": 2,
+      "pca_settings": "{\"fixed_ranks\": [1], \"variance_thresholds\": [0.9, 0.95]}",
+      "source_kind": "recorded_ood",
+      "available": 1000,
+      "examined": 1,
+      "oracle_valid": 1,
+      "reverse_valid": 1,
+      "oracle_commutes": 1,
+      "f_no_op": 0,
+      "f_context_no_op": 0,
+      "g_no_op": 0,
+      "selected": 1,
+      "unexamined": 999
+    }
+  ],
+  "diagnoses": [
+    {
+      "checkpoint_path": "/home/ubuntu/cogitao-research/checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/milestone_025pct.ckpt",
+      "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+      "git_commit": "dfec9cbb2afe6616194c1fb41430c0c5d2bc4208",
+      "experiment_id": 1,
+      "split": "val_ood",
+      "f": "rot90",
+      "g": "translate_up",
+      "program": "translate_up -> rot90",
+      "function_ordering": "pair (f,g): fgx=f(g(x)); task-token order [g,f] means g -> f",
+      "oracle_valid_count": 1,
+      "model_sample_count": 1,
+      "sample_count": 1,
+      "layer": "",
+      "seed": 42,
+      "global_step": 19500,
+      "probe_fit_sample_count": 2,
+      "g_probe_fit_sample_count": 2,
+      "ridge": 0.01,
+      "pool_grid": 2,
+      "pca_settings": "{\"fixed_ranks\": [1], \"variance_thresholds\": [0.9, 0.95]}",
+      "source_kind": "recorded_ood",
+      "diagnosis": "Type D: mixed",
+      "provisional": true,
+      "A_object_accuracy": 0.15384615898132326,
+      "B_object_accuracy": 0.29629629135131835,
+      "C_object_accuracy": 0.21428571701049803,
+      "D_object_accuracy": 0.05555555820465088,
+      "C_first_object_accuracy": 0.5,
+      "context_error": 0.9086004724271941,
+      "transfer_gap": -0.2637047080520465,
+      "atomic_to_context_drop": -0.1424501323699951,
+      "oracle_to_direct_drop": 0.24074073314666747,
+      "oracle_to_sequential_drop": 0.08201057434082032,
+      "good_threshold": 0.9,
+      "bad_threshold": 0.7,
+      "transfer_gap_threshold": 0.1,
+      "low_latent_error_threshold": 0.1,
+      "earliest_divergent_stage": null,
+      "earliest_binding_divergent_stage": null,
+      "localization_interpretation": "Different inputs/programs can differ at early stages by design; divergence alone is not a causal failure site.",
+      "oracle_intermediate_reinference_match_fraction": 1.0,
+      "path_defect_threshold": 0.1,
+      "B_success_D_failure_samples": 0
+    }
+  ],
+  "interpretation_limits": [
+    "Observational localization does not establish module causality.",
+    "PCA directions come from centered ID training residuals; action projections are uncentered.",
+    "Underidentified affine operators are assessed by held-out data defects.",
+    "Synthetic ID contexts are not recorded held-out composition rows.",
+    "Within-checkpoint examples are not independent experimental replicates.",
+    "Cheating composition baselines, when enabled, cannot support transfer claims.",
+    "Resizing and oracle execution need not commute; resized labels follow the existing benchmark convention.",
+    "Oracle object identity may not be reconstructible from an intermediate raster; reinference match is audited."
+  ],
+  "token_swap": [
+    {
+      "checkpoint_path": "/home/ubuntu/cogitao-research/checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/milestone_025pct.ckpt",
+      "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+      "git_commit": "dfec9cbb2afe6616194c1fb41430c0c5d2bc4208",
+      "experiment_id": 1,
+      "split": "val_ood",
+      "f": "rot90",
+      "g": "translate_up",
+      "program": "translate_up -> rot90",
+      "function_ordering": "pair (f,g): fgx=f(g(x)); task-token order [g,f] means g -> f",
+      "oracle_valid_count": 1,
+      "model_sample_count": 1,
+      "sample_count": 1,
+      "layer": "",
+      "seed": 42,
+      "global_step": 19500,
+      "probe_fit_sample_count": 2,
+      "g_probe_fit_sample_count": 2,
+      "ridge": 0.01,
+      "pool_grid": 2,
+      "pca_settings": "{\"fixed_ranks\": [1], \"variance_thresholds\": [0.9, 0.95]}",
+      "source_kind": "recorded_ood",
+      "seen_template": [
+        "mirror_horizontal",
+        "rot90"
+      ],
+      "replacement_slot": 0,
+      "replacement": "translate_up",
+      "exact_accuracy": 0.0,
+      "cross_entropy": 0.40353360772132874,
+      "nll": 161.4134521484375,
+      "confidence": 0.9672061204910278,
+      "entropy": 0.0724475085735321,
+      "brier": 0.13423088192939758,
+      "example_ece": 0.06262495368719101,
+      "object_accuracy": 0.05555555820465088,
+      "ece": 0.06262495577335357,
+      "interpretation": "Swapped input embedding realizes the held-out program; observational behavior, not a rescue claim."
+    }
+  ],
+  "per_example_manifest": {
+    "val_ood:translate_up->rot90": "val_ood__translate_up__rot90__per_example_transfer.npz"
+  },
+  "behavioral_summary": [
+    {
+      "checkpoint_path": "/home/ubuntu/cogitao-research/checkpoints/cogitao_vit_cross_attention/cogitao_c1_experiment_1_vit6_function_mlp_cross_attention/run_000/milestone_025pct.ckpt",
+      "checkpoint_sha256": "c9b3a5bc4ad4906076a368f18e0a44f94677af172f0cf07220224165b0995543",
+      "git_commit": "dfec9cbb2afe6616194c1fb41430c0c5d2bc4208",
+      "experiment_id": 1,
+      "split": "val_ood",
+      "f": "rot90",
+      "g": "translate_up",
+      "program": "translate_up -> rot90",
+      "function_ordering": "pair (f,g): fgx=f(g(x)); task-token order [g,f] means g -> f",
+      "oracle_valid_count": 1,
+      "model_sample_count": 1,
+      "sample_count": 1,
+      "layer": "",
+      "seed": 42,
+      "global_step": 19500,
+      "probe_fit_sample_count": 2,
+      "g_probe_fit_sample_count": 2,
+      "ridge": 0.01,
+      "pool_grid": 2,
+      "pca_settings": "{\"fixed_ranks\": [1], \"variance_thresholds\": [0.9, 0.95]}",
+      "source_kind": "recorded_ood",
+      "status": "ok",
+      "oracle_intermediate_reinference_match_fraction": 1.0,
+      "resize_oracle_order_pixel_defect": 0.0575,
+      "resize_oracle_order_valid_samples": 1,
+      "input_resize_fraction": 1.0,
+      "A_exact_accuracy": 0.0,
+      "A_cross_entropy": 0.09519103914499283,
+      "A_nll": 38.076416015625,
+      "A_confidence": 0.9548256993293762,
+      "A_entropy": 0.09350037574768066,
+      "A_brier": 0.061840131878852844,
+      "A_example_ece": 0.01817411743104458,
+      "A_object_accuracy": 0.15384615898132326,
+      "A_ece": 0.018174118548631667,
+      "B_exact_accuracy": 0.0,
+      "B_cross_entropy": 0.09596072882413864,
+      "B_nll": 38.38429260253906,
+      "B_confidence": 0.9542469382286072,
+      "B_entropy": 0.093917116522789,
+      "B_brier": 0.06317035853862762,
+      "B_example_ece": 0.0281651820987463,
+      "B_object_accuracy": 0.29629629135131835,
+      "B_ece": 0.028165183067321777,
+      "C_first_exact_accuracy": 0.0,
+      "C_first_cross_entropy": 0.0646333172917366,
+      "C_first_nll": 25.853328704833984,
+      "C_first_confidence": 0.9594212174415588,
+      "C_first_entropy": 0.07993805408477783,
+      "C_first_brier": 0.04238606244325638,
+      "C_first_example_ece": 0.017665913328528404,
+      "C_first_object_accuracy": 0.5,
+      "C_first_ece": 0.01766591250896454,
+      "C_exact_accuracy": 0.0,
+      "C_cross_entropy": 0.11177834868431091,
+      "C_nll": 44.711341857910156,
+      "C_confidence": 0.9601476788520813,
+      "C_entropy": 0.08293157070875168,
+      "C_brier": 0.07700859010219574,
+      "C_example_ece": 0.038682784885168076,
+      "C_object_accuracy": 0.21428571701049803,
+      "C_ece": 0.038682780712842944,
+      "D_exact_accuracy": 0.0,
+      "D_cross_entropy": 0.40353360772132874,
+      "D_nll": 161.4134521484375,
+      "D_confidence": 0.9672061204910278,
+      "D_entropy": 0.0724475085735321,
+      "D_brier": 0.13423088192939758,
+      "D_example_ece": 0.06262495368719101,
+      "D_object_accuracy": 0.05555555820465088,
+      "D_ece": 0.06262495577335357
+    }
+  ],
+  "representation_storage": "disabled"
+}
