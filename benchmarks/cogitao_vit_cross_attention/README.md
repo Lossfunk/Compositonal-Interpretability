@@ -240,3 +240,25 @@ For the five-state oracle experiment on every atomic pair across C1 experiments
 1–5, with per-layer action transfer, gated commutators, learned relation
 retention, OOD object-accuracy correlations, and W&B logging, see
 [C1_ATOMIC_PAIR_EXPERIMENTS.md](C1_ATOMIC_PAIR_EXPERIMENTS.md).
+
+## Rotation-only training
+
+For the atomic 0°, 90°, 180°, and 270° ViT baseline, isolated data splits,
+training commands, and the later seen/unseen composition protocol, see
+[ROTATIONS.md](ROTATIONS.md).
+
+The selected-composition fine-tuning experiment and balanced seen/held-out
+pair protocol are implemented in [ROTATION_COMPOSITIONS.md](ROTATION_COMPOSITIONS.md).
+
+For fresh joint training on 15°, 30°, 45°, 60°, 75°, and 90° whole-grid
+rotations and selected compositions, see [DEGREE_ROTATIONS.md](DEGREE_ROTATIONS.md).
+
+The corrected commutativity-aware pair holdout, using 1×1 patches and batch
+size 512, is documented in [UNORDERED_ROTATIONS.md](UNORDERED_ROTATIONS.md).
+
+For the current atomic and composition rotation experiment, with each object
+rotated and returned to its original top-left anchor, see
+[OBJECT_ANCHOR_ROTATIONS.md](OBJECT_ANCHOR_ROTATIONS.md).
+
+Frozen hidden-state group-law tests and their post-training watcher are documented
+in [ROTATION_GROUP_TESTS.md](ROTATION_GROUP_TESTS.md).

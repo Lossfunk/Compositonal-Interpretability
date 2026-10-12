@@ -1,0 +1,104 @@
+experiment_name: cogitao_rotation_compositions_vit
+seed: 42
+model:
+  class_path: benchmarks.cogitao_vit_cross_attention.rotation_model.RotationTokenViT
+  config:
+    input_resolution:
+    - 20
+    - 20
+    angles: &id001
+    - 0
+    - 90
+    - 180
+    - 270
+    max_task_tokens: 2
+    validation_split_names:
+    - val
+    test_split_names:
+    - test
+    fail_on_nonfinite: true
+    encoder:
+      patch_size: 1
+      hidden_dim: 128
+      num_layers: 6
+      num_heads: 4
+      mlp_dim: 512
+      dropout: 0.0
+trainer:
+  float32_matmul_precision: high
+  optimizer:
+    type: AdamW
+    config:
+      lr: 0.0003
+      weight_decay: 0.001
+    schedule:
+      warmup_steps: 200
+      min_lr_ratio: 0.01
+  config:
+    max_epochs: 60
+    accelerator: gpu
+    devices: 1
+    precision: bf16-mixed
+    gradient_clip_val: 1.0
+    log_every_n_steps: 10
+    enable_progress_bar: false
+callbacks:
+  early_stopping_patience: 12
+  checkpoint:
+    monitor: val/id/cross_entropy_loss
+    mode: min
+    save_top_k: 1
+    save_last: true
+    filename: best
+logging:
+  save_dir: runs/cogitao_rotation_compositions_vit
+data:
+  validation_split_names:
+  - val
+  test_split_names:
+  - test
+  train:
+    class_path: benchmarks.cogitao_vit_cross_attention.rotation_compositions.RotationProgramDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: train
+      image_size: &id002
+      - 20
+      - 20
+      angles: *id001
+      seed: 42
+      program_selection: seen
+  val:
+    class_path: benchmarks.cogitao_vit_cross_attention.rotation_compositions.RotationProgramDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: val
+      image_size: *id002
+      angles: *id001
+      seed: 42
+      program_selection: seen
+  test:
+    class_path: benchmarks.cogitao_vit_cross_attention.rotation_compositions.RotationProgramDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: test
+      image_size: *id002
+      angles: *id001
+      seed: 42
+      program_selection: all
+  loader:
+    batch_size: 64
+    val_batch_size: 64
+    shuffle: true
+    num_workers: 4
+    pin_memory: true
+    drop_last: false
+    persistent_workers: true
+initialization:
+  checkpoint: runs/cogitao_rotation_token_vit/run_000/checkpoints/best.ckpt

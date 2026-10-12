@@ -1,0 +1,121 @@
+callbacks:
+  checkpoint:
+    filename: best
+    mode: min
+    monitor: val/id/cross_entropy_loss
+    save_last: true
+    save_top_k: 1
+  early_stopping_patience: 15
+data:
+  loader:
+    batch_size: 512
+    drop_last: false
+    num_workers: 4
+    persistent_workers: true
+    pin_memory: true
+    shuffle: true
+    val_batch_size: 512
+  test:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      experiment: 1
+      image_size:
+      - 24
+      - 24
+      program_selection: all
+      root: data/cogitao/files/CompGen
+      seed: 42
+      setting: 1
+      split: test
+      pair_split: unordered
+  test_split_names:
+  - test
+  train:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      experiment: 1
+      image_size:
+      - 24
+      - 24
+      program_selection: seen
+      root: data/cogitao/files/CompGen
+      seed: 42
+      setting: 1
+      split: train
+      pair_split: unordered
+  val:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      experiment: 1
+      image_size:
+      - 24
+      - 24
+      program_selection: seen
+      root: data/cogitao/files/CompGen
+      seed: 42
+      setting: 1
+      split: val
+      pair_split: unordered
+  validation_split_names:
+  - val
+experiment_name: cogitao_degree_rotation_unordered_holdout
+logging:
+  save_dir: runs/cogitao_degree_rotation_unordered_holdout
+model:
+  class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_model.DegreeRotationViT
+  config:
+    angles:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 105
+    - 120
+    - 135
+    - 150
+    - 165
+    - 180
+    atomic_angles:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    encoder:
+      dropout: 0.0
+      hidden_dim: 128
+      mlp_dim: 512
+      num_heads: 4
+      num_layers: 6
+      patch_size: 1
+    fail_on_nonfinite: true
+    input_resolution:
+    - 24
+    - 24
+    max_task_tokens: 2
+    test_split_names:
+    - test
+    validation_split_names:
+    - val
+seed: 42
+trainer:
+  config:
+    accelerator: gpu
+    devices: 1
+    enable_progress_bar: false
+    gradient_clip_val: 1.0
+    log_every_n_steps: 10
+    max_epochs: 100
+    precision: bf16-mixed
+  float32_matmul_precision: high
+  optimizer:
+    config:
+      lr: 0.001
+      weight_decay: 0.001
+    schedule:
+      min_lr_ratio: 0.01
+      warmup_steps: 200
+    type: AdamW

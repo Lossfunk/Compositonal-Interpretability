@@ -1,0 +1,118 @@
+experiment_name: cogitao_degree_rotation_joint_scratch
+seed: 42
+model:
+  class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_model.DegreeRotationViT
+  config:
+    input_resolution:
+    - 24
+    - 24
+    angles:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+    - 105
+    - 120
+    - 135
+    - 150
+    - 165
+    - 180
+    max_task_tokens: 2
+    validation_split_names:
+    - val
+    test_split_names:
+    - test
+    fail_on_nonfinite: true
+    encoder:
+      patch_size: 1
+      hidden_dim: 128
+      num_layers: 6
+      num_heads: 4
+      mlp_dim: 512
+      dropout: 0.0
+    atomic_angles:
+    - 15
+    - 30
+    - 45
+    - 60
+    - 75
+    - 90
+trainer:
+  float32_matmul_precision: high
+  optimizer:
+    type: AdamW
+    config:
+      lr: 0.001
+      weight_decay: 0.001
+    schedule:
+      warmup_steps: 200
+      min_lr_ratio: 0.01
+  config:
+    max_epochs: 100
+    accelerator: gpu
+    devices: 1
+    precision: bf16-mixed
+    gradient_clip_val: 1.0
+    log_every_n_steps: 10
+    enable_progress_bar: false
+callbacks:
+  early_stopping_patience: 15
+  checkpoint:
+    monitor: val/id/cross_entropy_loss
+    mode: min
+    save_top_k: 1
+    save_last: true
+    filename: best
+logging:
+  save_dir: runs/cogitao_degree_rotation_joint_scratch
+data:
+  validation_split_names:
+  - val
+  test_split_names:
+  - test
+  train:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: train
+      image_size:
+      - 24
+      - 24
+      seed: 42
+      program_selection: seen
+  val:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: val
+      image_size:
+      - 24
+      - 24
+      seed: 42
+      program_selection: seen
+  test:
+    class_path: benchmarks.cogitao_vit_cross_attention.degree_rotation_data.DegreeRotationDataset
+    init_args:
+      root: data/cogitao/files/CompGen
+      setting: 1
+      experiment: 1
+      split: test
+      image_size:
+      - 24
+      - 24
+      seed: 42
+      program_selection: all
+  loader:
+    batch_size: 128
+    val_batch_size: 128
+    shuffle: true
+    num_workers: 4
+    pin_memory: true
+    drop_last: false
+    persistent_workers: true

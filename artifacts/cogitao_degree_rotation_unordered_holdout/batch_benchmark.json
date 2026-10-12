@@ -1,0 +1,47 @@
+{
+  "patch_size": 1,
+  "precision": "bf16-mixed",
+  "benchmark": "synthetic full optimizer steps; excludes data loading",
+  "results": [
+    {
+      "batch_size": 128,
+      "seconds_per_step": 0.144172481333347,
+      "samples_per_second": 887.8254630580024,
+      "peak_allocated_gib": 2.274473190307617,
+      "peak_reserved_gib": 2.66796875,
+      "status": "ok"
+    },
+    {
+      "batch_size": 256,
+      "seconds_per_step": 0.3040439885001736,
+      "samples_per_second": 841.9834289861442,
+      "peak_allocated_gib": 4.472302436828613,
+      "peak_reserved_gib": 5.06640625,
+      "status": "ok"
+    },
+    {
+      "batch_size": 512,
+      "seconds_per_step": 0.6139177893334514,
+      "samples_per_second": 833.9878871337047,
+      "peak_allocated_gib": 8.92722463607788,
+      "peak_reserved_gib": 9.93359375,
+      "status": "ok"
+    },
+    {
+      "batch_size": 768,
+      "seconds_per_step": 0.9218164009998873,
+      "samples_per_second": 833.1377041751006,
+      "peak_allocated_gib": 13.347820281982422,
+      "peak_reserved_gib": 15.033203125,
+      "status": "ok"
+    },
+    {
+      "batch_size": 1024,
+      "seconds_per_step": 1.2336430778335246,
+      "samples_per_second": 830.06180507113,
+      "peak_allocated_gib": 17.777750492095947,
+      "peak_reserved_gib": 19.982421875,
+      "status": "ok"
+    }
+  ]
+}
