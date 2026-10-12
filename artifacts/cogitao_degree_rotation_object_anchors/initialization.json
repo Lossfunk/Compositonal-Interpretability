@@ -1,0 +1,7 @@
+{
+  "type": "random_from_scratch",
+  "checkpoint": null,
+  "seed": 42,
+  "initial_weights_sha256": "9e6c65207223c81dce69cc5c33e86603009aed48274088e444c5a12d8fb5fec1",
+  "optimizer": "fresh AdamW"
+}

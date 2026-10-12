@@ -1,0 +1,13 @@
+{
+  "output": "/home/ubuntu/cogitao-research/runs/cogitao_degree_rotation_object_anchors/run_000",
+  "fit_sources": 512,
+  "latent_dim": 64,
+  "pool_grid": 6,
+  "batch_size": 128,
+  "ridge": 0.01,
+  "device": "auto",
+  "wait": true,
+  "poll_seconds": 15,
+  "log_wandb": true,
+  "skip_initialization_control": false
+}

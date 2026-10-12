@@ -1,0 +1,498 @@
+{
+  "created_at": "2026-10-12T19:34:09.684750+00:00",
+  "source_run": "runs/cogitao_degree_rotation_object_anchors/run_000",
+  "training_status": "complete",
+  "group_tests_status": "complete",
+  "wandb_url": "https://wandb.ai/uaena/cogitao-compgen-slot-attention/runs/mu5gu3v0",
+  "files": [
+    {
+      "path": "report.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/report.json",
+      "kind": "copy",
+      "sha256": "49450546b04a07b0ed6274345b448741826ebb728dcb6e30d196751fe7b8e6f4",
+      "bytes": 164009
+    },
+    {
+      "path": "config.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/config.json",
+      "kind": "copy",
+      "sha256": "9d175599f551b3a90753b92454101d52530ae363d7dfa4c67a65734b3773adc5",
+      "bytes": 3366
+    },
+    {
+      "path": "data_manifest.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/data_manifest.json",
+      "kind": "copy",
+      "sha256": "e597b6e528193ba171d8e71e9df1ced1402b2c54756582252d748c61fc5fa61d",
+      "bytes": 974453
+    },
+    {
+      "path": "composition_split.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/composition_split.json",
+      "kind": "copy",
+      "sha256": "bf6b89622cfe8d200375923abeb0497a0eecf6db291e07bc9b3c1867b7120856",
+      "bytes": 1547
+    },
+    {
+      "path": "initialization.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/initialization.json",
+      "kind": "copy",
+      "sha256": "0f160b7098e50be7de9dd44bcf3a39249dd962a041bca1e35d739b65b11d16cf",
+      "bytes": 198
+    },
+    {
+      "path": "status.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/status.json",
+      "kind": "copy",
+      "sha256": "a0500c729afea9a00583aa96847725a47847ba59cf6741b313a8f40f17a50a61",
+      "bytes": 136
+    },
+    {
+      "path": "wandb.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/wandb.json",
+      "kind": "copy",
+      "sha256": "7e3291ce0a05ba289109bd871ad2e86ec18e710785c1d7c8975abb2a3535b7fa",
+      "bytes": 275
+    },
+    {
+      "path": "training_metrics.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/metrics/version_0/metrics.csv",
+      "kind": "copy",
+      "sha256": "70ada7f1f7300581a96b767f625591fc12ceaa7ad5c15e1f7d7fa89db87cdebb",
+      "bytes": 127218
+    },
+    {
+      "path": "group_tests/comparison.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/comparison.json",
+      "kind": "copy",
+      "sha256": "c589731b2b99c9803ffa1742527b6232b7a336b14ef645a01a25ac51b22f2292",
+      "bytes": 218376
+    },
+    {
+      "path": "group_tests/config.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/config.json",
+      "kind": "copy",
+      "sha256": "068a9834a40f16d51ab899d919beff6134edd37a4df26a1549ad6faee4294068",
+      "bytes": 317
+    },
+    {
+      "path": "group_tests/probes.pt",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/probes.pt",
+      "kind": "copy",
+      "sha256": "35c31cc78c62c6f8656caad0860a5512942ef2cd406b8776b281be36b069ad0d",
+      "bytes": 2017201
+    },
+    {
+      "path": "group_tests/report.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/report.json",
+      "kind": "copy",
+      "sha256": "c8b4d34efc6b4b1043248e6d20ceba3556a4bc1e1119653f889249f06b8521a6",
+      "bytes": 1409365
+    },
+    {
+      "path": "group_tests/status.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/status.json",
+      "kind": "copy",
+      "sha256": "85072c250a42b420a5b0a5ff7ae0a214ae104a899b1451d7d7309b3913e21621",
+      "bytes": 277
+    },
+    {
+      "path": "group_tests/summary.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/summary.json",
+      "kind": "copy",
+      "sha256": "8aa59fa8628af15b709251e4a80b4e5eb041dd044edf21174229dafba147983d",
+      "bytes": 69541
+    },
+    {
+      "path": "group_tests/test_commutativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_commutativity.csv",
+      "kind": "copy",
+      "sha256": "eb9b0c4bcd37abd0b9d97ea8df7a9df0f80a24b34f011549914764c38b42c277",
+      "bytes": 5609
+    },
+    {
+      "path": "group_tests/test_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_composition.csv",
+      "kind": "copy",
+      "sha256": "d9641bd9058a20fc61f489ea94f7d9359056852c75fb60c934a92b57c60bf6b5",
+      "bytes": 5737
+    },
+    {
+      "path": "group_tests/test_cycles.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_cycles.csv",
+      "kind": "copy",
+      "sha256": "939c9e91f5531354bd3d57f1545c1ca8221290a5350164260a7b293c1288bda3",
+      "bytes": 1037
+    },
+    {
+      "path": "group_tests/test_factorization_associativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_factorization_associativity.csv",
+      "kind": "copy",
+      "sha256": "91d7a3a18f73eb10873f3ce2efcd9f54b2d2a0708a687eda86e695476fda8187",
+      "bytes": 29599
+    },
+    {
+      "path": "group_tests/test_full_c24_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_full_c24_composition.csv",
+      "kind": "copy",
+      "sha256": "fab4d5077f1ad7f9783f2f51c6bde1281008cb959045155308dfde8ada5fc198",
+      "bytes": 86785
+    },
+    {
+      "path": "group_tests/test_identity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_identity.csv",
+      "kind": "copy",
+      "sha256": "b25b2082d9b980cf1e089a22e510b922f7b16b4d5e8ce0a0aefa2e674ca084fd",
+      "bytes": 7418
+    },
+    {
+      "path": "group_tests/test_inverse.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_inverse.csv",
+      "kind": "copy",
+      "sha256": "1d03d4374ccea7df7e3086e0d2eb1b078cfd2ed08874a81276539a05a95833da",
+      "bytes": 7501
+    },
+    {
+      "path": "group_tests/test_latent_program_consistency.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_latent_program_consistency.csv",
+      "kind": "copy",
+      "sha256": "ba6d077579b70df7d31cd41034d901013a8d2a015586591409a4a6d722dbafe8",
+      "bytes": 30583
+    },
+    {
+      "path": "group_tests/test_latent_regrouping.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_latent_regrouping.csv",
+      "kind": "copy",
+      "sha256": "24f7da41c106322896b58412c3057215d07af97e817747a602d6bfc51e671aac",
+      "bytes": 9382
+    },
+    {
+      "path": "group_tests/test_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/test_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "ae18ea2de4036f00b20bd9e43dbd5a7241dd6aff2c546496f1a3fcbbe5b05bd7",
+      "bytes": 5541
+    },
+    {
+      "path": "group_tests/training_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/training_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "c9bbd5c6b49b3bd1108c1dc0538623902a3563c51b2f21b65ebc64aadeb6f70a",
+      "bytes": 5548
+    },
+    {
+      "path": "group_tests/val_commutativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_commutativity.csv",
+      "kind": "copy",
+      "sha256": "91b13bffac48c8365e02b701ebc03706e6737f6bf63ab3296a139bc760ed7553",
+      "bytes": 5602
+    },
+    {
+      "path": "group_tests/val_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_composition.csv",
+      "kind": "copy",
+      "sha256": "dcf328ab5506312d502bd500780a1e6c9164c3ffc719bf4d4eefd5c8b94d72eb",
+      "bytes": 5735
+    },
+    {
+      "path": "group_tests/val_cycles.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_cycles.csv",
+      "kind": "copy",
+      "sha256": "f32250c33640a8ae9e9fd4b21df05ea3b482b2f2a0ba5b30cef5776345e99696",
+      "bytes": 1039
+    },
+    {
+      "path": "group_tests/val_factorization_associativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_factorization_associativity.csv",
+      "kind": "copy",
+      "sha256": "89bd84bcf943b6a9f2ace2d912dfc63d98cf1651df31d03044abe9eda23bef55",
+      "bytes": 29590
+    },
+    {
+      "path": "group_tests/val_full_c24_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_full_c24_composition.csv",
+      "kind": "copy",
+      "sha256": "57beba2b38a81a8e7b9dfd7b89efbb340b155370d4fc4c094d0056aca4030046",
+      "bytes": 86916
+    },
+    {
+      "path": "group_tests/val_identity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_identity.csv",
+      "kind": "copy",
+      "sha256": "88d6386e4e5fa94ca1d73a7498a91d40ab4409eaad63766f7c84f8b7b6b00be0",
+      "bytes": 7426
+    },
+    {
+      "path": "group_tests/val_inverse.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_inverse.csv",
+      "kind": "copy",
+      "sha256": "d5c0668f4c9700c9b9c98b09b6a42fbe4665d70547c3b47c5ad4cbd2b7ed6816",
+      "bytes": 7495
+    },
+    {
+      "path": "group_tests/val_latent_program_consistency.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_latent_program_consistency.csv",
+      "kind": "copy",
+      "sha256": "934013bcca99a260e0f1377b80b9ada4ce42f0c985d86422bd6a52f1579aa42d",
+      "bytes": 27252
+    },
+    {
+      "path": "group_tests/val_latent_regrouping.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_latent_regrouping.csv",
+      "kind": "copy",
+      "sha256": "b5c268b2a4a87f37f14dd5f505231e524f659d5dd4ddffe7b53be78d68489b69",
+      "bytes": 9396
+    },
+    {
+      "path": "group_tests/val_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/val_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "9a67b1ce0156be06f20c3c5cf43693a02d48f343f4552eb3be6f5c3f3dc91057",
+      "bytes": 5538
+    },
+    {
+      "path": "group_tests/wandb.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/wandb.json",
+      "kind": "copy",
+      "sha256": "916ff57498ce05997fba51b6cf56b22300fb0bad7a8c1dcead753eb4491fb782",
+      "bytes": 135
+    },
+    {
+      "path": "group_tests/initialization_control/probes.pt",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/probes.pt",
+      "kind": "copy",
+      "sha256": "d31652e7370ce4b2d585505a3d77cc64f9b8f34450fa1d4b620ca9ec6b631488",
+      "bytes": 2017201
+    },
+    {
+      "path": "group_tests/initialization_control/report.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/report.json",
+      "kind": "copy",
+      "sha256": "52a266dab1b3392222a446d45457bef09ecc57379a24830fbe340e2b28d23a22",
+      "bytes": 1416252
+    },
+    {
+      "path": "group_tests/initialization_control/status.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/status.json",
+      "kind": "copy",
+      "sha256": "fdd10840ae87d42ad3050ef53b679d1b4481df42ae206a7b5259aaa20ff3b6e5",
+      "bytes": 171
+    },
+    {
+      "path": "group_tests/initialization_control/summary.json",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/summary.json",
+      "kind": "copy",
+      "sha256": "675841f2ffdcfe10443007e6ffdd228b66eec3ed769c699e8220b1f8cd14897c",
+      "bytes": 70102
+    },
+    {
+      "path": "group_tests/initialization_control/test_commutativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_commutativity.csv",
+      "kind": "copy",
+      "sha256": "7a2baa995ca11f6a0c4943ce63ba3b36c6d5b89249eed3be6683a0c8bba32fb3",
+      "bytes": 5716
+    },
+    {
+      "path": "group_tests/initialization_control/test_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_composition.csv",
+      "kind": "copy",
+      "sha256": "58b652bdb9654f257450c0c2d2e3a3786cb29ba3adcb6437284efac4fbec82e0",
+      "bytes": 5831
+    },
+    {
+      "path": "group_tests/initialization_control/test_cycles.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_cycles.csv",
+      "kind": "copy",
+      "sha256": "bd07a3c78a1656019dec8cb632a02500f417c1d13602a7ce0e0b78a2b2c1da9c",
+      "bytes": 1032
+    },
+    {
+      "path": "group_tests/initialization_control/test_factorization_associativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_factorization_associativity.csv",
+      "kind": "copy",
+      "sha256": "905962659ee849e86e4ab52ac0764e02b84f1230785dcaa2adfa26c5347fce34",
+      "bytes": 30460
+    },
+    {
+      "path": "group_tests/initialization_control/test_full_c24_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_full_c24_composition.csv",
+      "kind": "copy",
+      "sha256": "3db98cbbe238779ebe020ff39ecd50274ac51c731e2e876c212b9eec0468d7e9",
+      "bytes": 87475
+    },
+    {
+      "path": "group_tests/initialization_control/test_identity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_identity.csv",
+      "kind": "copy",
+      "sha256": "85f1daaf73407111efcea1c50588d3af50e709866414ea455d39c468d5a15898",
+      "bytes": 7534
+    },
+    {
+      "path": "group_tests/initialization_control/test_inverse.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_inverse.csv",
+      "kind": "copy",
+      "sha256": "35f7247dc4ab57dac8fff34ecdf48b761967b20c683eb4f0bfa5912bd5c831f8",
+      "bytes": 7549
+    },
+    {
+      "path": "group_tests/initialization_control/test_latent_program_consistency.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_latent_program_consistency.csv",
+      "kind": "copy",
+      "sha256": "50bf52959f95f8e02603671c8ed647ae7dffc153ab502bc3820b7a6f6aba7405",
+      "bytes": 31485
+    },
+    {
+      "path": "group_tests/initialization_control/test_latent_regrouping.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_latent_regrouping.csv",
+      "kind": "copy",
+      "sha256": "d87ca94666a61376915aece76630378d9b31505b1f14c311a153b721a7b64111",
+      "bytes": 9800
+    },
+    {
+      "path": "group_tests/initialization_control/test_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/test_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "f698f8502adb9b8c1d3a1c45d1a8df80a5fa81aaaffb1b371ae2aee71ebd2fd2",
+      "bytes": 5513
+    },
+    {
+      "path": "group_tests/initialization_control/training_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/training_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "4f76f53f2da26c2a19bebf740bfe91c977f3d7f4d6465eaa964256966b110c8e",
+      "bytes": 5519
+    },
+    {
+      "path": "group_tests/initialization_control/val_commutativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_commutativity.csv",
+      "kind": "copy",
+      "sha256": "7a0c4023303a9b751791b9ac8b4a94c8a14652c6659c3ee3f13c4c032441a5ce",
+      "bytes": 5754
+    },
+    {
+      "path": "group_tests/initialization_control/val_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_composition.csv",
+      "kind": "copy",
+      "sha256": "695fffb94b1a0edcdc9d496f4839d57431a6f9cda3e1af04e47892db9f2414f6",
+      "bytes": 5848
+    },
+    {
+      "path": "group_tests/initialization_control/val_cycles.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_cycles.csv",
+      "kind": "copy",
+      "sha256": "1afb6a3d1e8b022cdf1f37c7247c8cc413e8e8160d83b163801805e8b40f20d3",
+      "bytes": 1034
+    },
+    {
+      "path": "group_tests/initialization_control/val_factorization_associativity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_factorization_associativity.csv",
+      "kind": "copy",
+      "sha256": "9887396bf5b7b3034b2e60216516886ad303f3ceaaff0ce9e3511e1e648ee2c6",
+      "bytes": 30451
+    },
+    {
+      "path": "group_tests/initialization_control/val_full_c24_composition.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_full_c24_composition.csv",
+      "kind": "copy",
+      "sha256": "5db333916df565ab55572c3b9ff4a546519e2624c6168eba77be3218d34b1650",
+      "bytes": 87582
+    },
+    {
+      "path": "group_tests/initialization_control/val_identity.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_identity.csv",
+      "kind": "copy",
+      "sha256": "cd72551b24067e7b8d3986e426cd729cfee5e9824a5f9852f5d5ae1d08782659",
+      "bytes": 7548
+    },
+    {
+      "path": "group_tests/initialization_control/val_inverse.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_inverse.csv",
+      "kind": "copy",
+      "sha256": "76f54c0db1dab946a7819b4431154b593a8aa7d62277ae46409b0114baa93950",
+      "bytes": 7541
+    },
+    {
+      "path": "group_tests/initialization_control/val_latent_program_consistency.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_latent_program_consistency.csv",
+      "kind": "copy",
+      "sha256": "d5a63ec933d0d0bafe152ca23d01525d5a4ae2af4e34f8a919483ac560daf090",
+      "bytes": 28062
+    },
+    {
+      "path": "group_tests/initialization_control/val_latent_regrouping.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_latent_regrouping.csv",
+      "kind": "copy",
+      "sha256": "989b0b422bb5b0a32d5fb2bad6bceeed49dbd815db5cd8ff5b2eb1ada5ec914c",
+      "bytes": 9807
+    },
+    {
+      "path": "group_tests/initialization_control/val_probe_fit.csv",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/group_tests/initialization_control/val_probe_fit.csv",
+      "kind": "copy",
+      "sha256": "58cfaf8ff09e7029faa4f0b3fb81abbda2de0282da7f804f6f5327d5b5cb526a",
+      "bytes": 5515
+    },
+    {
+      "path": "protocol/OBJECT_ANCHOR_ROTATIONS.md",
+      "source": "benchmarks/cogitao_vit_cross_attention/OBJECT_ANCHOR_ROTATIONS.md",
+      "kind": "copy",
+      "sha256": "e5e9ae3a1e05ea4f276ecfdc3d0b87901590b53d904fc24e3f120188b1eac13b",
+      "bytes": 4940
+    },
+    {
+      "path": "protocol/ROTATION_GROUP_TESTS.md",
+      "source": "benchmarks/cogitao_vit_cross_attention/ROTATION_GROUP_TESTS.md",
+      "kind": "copy",
+      "sha256": "bd3f4b5d9620d0d8d34a8420b46ae0d9bc35987fa96f7380006ae413709893df",
+      "bytes": 5985
+    },
+    {
+      "path": "checkpoints/best.ckpt",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/checkpoints/best.ckpt",
+      "kind": "symlink",
+      "sha256": "0ee4f1f2340cf3861cb31ec5faa3262815cf502a83522e6676c447cb3d35fe25",
+      "bytes": 15318609
+    },
+    {
+      "path": "checkpoints/last.ckpt",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/checkpoints/last.ckpt",
+      "kind": "symlink",
+      "sha256": "0ee4f1f2340cf3861cb31ec5faa3262815cf502a83522e6676c447cb3d35fe25",
+      "bytes": 15318609
+    },
+    {
+      "path": "initial_weights.pt",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/initial_weights.pt",
+      "kind": "symlink",
+      "sha256": "9e6c65207223c81dce69cc5c33e86603009aed48274088e444c5a12d8fb5fec1",
+      "bytes": 5101889
+    },
+    {
+      "path": "behavioral_summary.csv",
+      "kind": "derived_from_report",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/report.json",
+      "sha256": "a24dd6baf57fca82c5faa29cdcfcd935db3e30f77e573dc8ee0df763f50d34bb",
+      "bytes": 12559
+    },
+    {
+      "path": "validation_seen_by_program.csv",
+      "kind": "derived_from_report",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/report.json",
+      "sha256": "ba111b2905c4a2546a5ee9e5ec05a0f159343a84fc783235a9c00bf769bbffd6",
+      "bytes": 12441
+    },
+    {
+      "path": "test_by_program.csv",
+      "kind": "derived_from_report",
+      "source": "runs/cogitao_degree_rotation_object_anchors/run_000/report.json",
+      "sha256": "6606e2ea5d98416ce5a8a94367105b3018059ffdcfa6c7d967ca3c66299f133f",
+      "bytes": 18630
+    },
+    {
+      "path": "README.md",
+      "kind": "generated_summary",
+      "sha256": "8aefaf31618279836cc4f7c819bec8ccacd98bd8bfa97a3fa7c366b46c810f4f",
+      "bytes": 3582
+    }
+  ]
+}
